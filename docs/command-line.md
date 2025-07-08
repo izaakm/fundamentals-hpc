@@ -4,6 +4,13 @@ title: Intro to Command Line
 
 # Command Line Basics
 
+> *How not to waste your time*
+>
+> Your solutions will always be more natural and more straightforward when done
+> and automated with a simple shell script or a makefile.
+>
+> ~ Biostars Handbook
+
 ## Terminology
 
 - shell
