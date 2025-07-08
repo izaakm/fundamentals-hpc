@@ -1,5 +1,8 @@
-# fundamentals-hpc
+# Fundamentals of HPC Workshop Series
 
-- [Quickstart for GitHub Pages](https://docs.github.com/en/pages/quickstart)
+View this [on the web][2].
+
+[1]: https://docs.github.com/en/pages/quickstart "Quickstart for GitHub Pages"
+[2]: https://izaakm.github.io/fundamentals-hpc
 
 <!-- END -->
