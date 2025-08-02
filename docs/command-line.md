@@ -260,9 +260,7 @@ List the contents of your home directory with extra information:
          ^^                 option
             ^^^^^^^^^^^^^^^ argument
 
-# Exercise
-
-## Navigating the Filesystem
+# Exercise: Navigating the Filesystem
 
 1.  Login to the cluster and print the working directory.
 2.  List the contents of the current directory.
@@ -272,17 +270,13 @@ List the contents of your home directory with extra information:
     - Use the full path.
     - Use the `SCRATCHDIR` variable.
 
-# Exercise
-
-## Setup your data directory
+# Exercise: Setup your data directory
 
 1.  Change your working directory to your scratch directory.
 2.  Create a directory called "data".
 3.  Inside the "data" directory, create three subdirectories: "raw",  downloads", and "p"ocessed .
 
-# Exercise
-
-## File and Directory Manipulation
+# Exercise: File and Directory Manipulation
 
 1.  Create a `tmp` directory and `cd` into it.
 2.  Create some test files, `a`, `b`, and `c`, and add some sample text to each one.
@@ -291,9 +285,7 @@ List the contents of your home directory with extra information:
 4.  Run `mv a c` ...
     - Check the file contents ... what happens?
 
-# Exercise
-
-## File and Directory Manipulation
+# Exercise: File and Directory Manipulation
 
 ```bash
 $ echo aa > a ; echo bb > b ; echo cc > c
@@ -318,13 +310,22 @@ aa
 aa
 ```
 
-# Exercise
+# Exercise: File and Directory Manipulation
 
-## Deleting files and directories
+Q: What command line options could you use with `cp`, `mv` to avoid
+accidentally overwriting files?
 
-1.  Create a test file `c`.
-2.  Run `rm c` ... what happens?
-3.  Remove the `tmp` directory ...
+
+# Exercise: Deleting files
+
+1.  Create a test file `foo.txt`
+2.  Run `rm foo.txt` ... what happens?
+
+
+# Exercise: Deleting directories
+
+1. Create a test directory `bar`
+3. Remove the `bar` directory ...
     - Use `rm` for deleting *files*.
     - Use `rmdir` to delete *empty directories* (safer option).
     - Use `rm -r` to delete directories *and their contents* (**use with caution!**).
