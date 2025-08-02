@@ -11,21 +11,53 @@ title: Intro to Command Line
 >
 > ~ Biostars Handbook
 
-## Terminology
+# Do you need to know how to use the command line?
 
-- shell
-- prompt
-- working directory
+Yes. The command line is a tool. The command line is to bioinformaticians what a hammer is to a carpenter.
 
-# What is *a shell*?
+# What do you need to know to get started?
+
+<!-- You need to know ... -->
+
+1. How to work with files and directories: how to move around with `cd`
+2. The meaning of **absolute** and **relative** paths: how to access files located in directories
+3. What simple Unix commands do: `ls`, `mv`, `rm`, `mkdir`, `cat`, `man`
+4. How to get help: how to find out more about what a Unix command does
+5. How to change a program's behavior with options (aka, "flags): how to customize typical unix programs `ls` vs `ls -l`
+6. What the terms **standard input** and **standard output** mean, how to redirect ("pipe") the output of one program into the input of the other
+
+# What is a terminal?
+
+terminal (aka, "terminal emulator)
+: a program that runs a shell [...?]
+
+# What is a shell?
 
 shell  
 : a program that allows a user to pass commands to the operating system of their computer
 
-Command line **shell** programs:
+```sh
+$ echo "Hello world!"
+Hello world!
+$
+```
 
-- bash (the default on Linux)
-- zsh (the default on MacOS)
+Type commands at the prompt `$`. If you don't see the prompt, the computer is
+still doing something.
+
+# What is the prompt?
+
+It shows basic login information followed by a `$` or `%`.
+
+```bash
+[USERNAME@NODE] $
+```
+
+In examples, you will often see only the dollar sign `$`:
+
+```bash
+$
+```
 
 # Disambiguation
 
@@ -41,50 +73,6 @@ terminal
 Linux  
 : an operating system
 
-
-# What is *the prompt*?
-
-The **prompt** `$` is where you enter commands for the **shell**.
-
-```bash
-$
-```
-
-Type a command, then press the <kbd>Return</kbd> or <kbd>Enter</kbd> key to run it:
-
-```bash
-$ ls
-Applications   Library     Public
-Desktop        Movies      Videos
-Documents      Music
-Downloads      Pictures
-$
-```
-
-# What is *the prompt*?
-
-It shows basic login information followed by a `$` or `%`.
-
-```bash
-[USERNAME@NODE] $
-```
-
-In examples, you will often see only the dollar sign `$`:
-
-```bash
-$
-```
-
-# Special characters
-
-:hand: Slow down! Watch out for special characters.
-
-     . / > \ | ~ * $
-
-... and many more!
-
-Special characters are context-dependent.
-
 # Logging in
 
 There are two ways to use the command line on ISAAC-NG:
@@ -92,17 +80,8 @@ There are two ways to use the command line on ISAAC-NG:
 - `ssh` via your computer's Terminal application (or similar). For more information, see: <br/><https://oit.utk.edu/hpsc/isaac-open-enclave-new-kpb/access-and-login-isaac-ng/>
 - Open OnDemand \> "Clusters" \>  ISAAC Shell Access"
 
-# Logging in
 
-The default prompt on ISAAC-NG:
-
-```bash
-[USERNAME@NODE] $
-```
-
-# Exercise
-
-## Log in to the cluster with `ssh` (optional)
+# Exercise: Log in to the cluster with `ssh` (optional)
 
 1.  On macOS or Linux, open your "Terminal" app.
 2.  Use the `ssh` command to connect to ISAAC-NG:
@@ -130,6 +109,31 @@ The default prompt on ISAAC-NG:
 | `echo <your text>`        | print `<your text>` to the terminal |
 
 </div>
+
+# Your first command!
+
+Type the command `ls` at the prompt, then press the <kbd>Return</kbd> or <kbd>Enter</kbd> key to run it:
+
+```bash
+$ ls
+Applications   Library     Public
+Desktop        Movies      Videos
+Documents      Music
+Downloads      Pictures
+$
+```
+
+# Special characters
+
+:hand: Slow down! Be careful before typing running commands with these
+characters:
+
+     . / > \ | ~ * $
+
+... and many more!
+
+Special characters are context-dependent.
+
 
 # What is the *working directory*?
 
