@@ -19,12 +19,13 @@ Yes. The command line is a tool. The command line is to bioinformaticians what a
 
 <!-- You need to know ... -->
 
-1. How to work with files and directories: how to move around with `cd`
+1. How to work with files and directories: move around with `cd`
+3. The most common unix/linux commands: `cat`, `ls`, `mkdir`, `mv`, `rm`
+5. How to change a program's behavior with options ("flags"), e.g. `ls` vs `ls -l`
 2. The meaning of **absolute** and **relative** paths: how to access files located in directories
-3. What simple Unix commands do: `ls`, `mv`, `rm`, `mkdir`, `cat`, `man`
-4. How to get help: how to find out more about what a Unix command does
-5. How to change a program's behavior with options (aka, "flags): how to customize typical unix programs `ls` vs `ls -l`
-6. What the terms **standard input** and **standard output** mean, how to redirect ("pipe") the output of one program into the input of the other
+4. How to get help: how to find out more about what a Unix command does, `man`
+6. What the terms **standard input** ("standard in") and **standard output** ("standard out") mean
+7. How to redirect ("pipe") the output of one program into the input of the other
 
 # What is a terminal?
 
