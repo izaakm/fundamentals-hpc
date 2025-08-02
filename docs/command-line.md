@@ -50,14 +50,20 @@ still doing something.
 
 It shows basic login information followed by a `$` or `%`.
 
-```bash
+```
 [USERNAME@NODE] $
 ```
 
 In examples, you will often see only the dollar sign `$`:
 
+```
+$ ls
+```
+
+Or just the command:
+
 ```bash
-$
+ls
 ```
 
 # Disambiguation
@@ -82,7 +88,14 @@ There are two ways to use the command line on ISAAC-NG:
 - Open OnDemand \> "Clusters" \>  ISAAC Shell Access"
 
 
-# Exercise: Log in to the cluster with `ssh` (optional)
+# Exercise: Get a terminal -- Use Open OnDemand (optional)
+
+1. Go to <www.oit.utk/hpsc>
+2. Click the button "Open OnDemand" on the left-hand side
+3. Click "Clusters > ISAAC"
+
+
+# Exercise: Get a terminal -- Log in to the cluster with `ssh` (optional)
 
 1.  On macOS or Linux, open your "Terminal" app.
 2.  Use the `ssh` command to connect to ISAAC-NG:
@@ -115,12 +128,22 @@ There are two ways to use the command line on ISAAC-NG:
 
 Type the command `ls` at the prompt, then press the <kbd>Return</kbd> or <kbd>Enter</kbd> key to run it:
 
+On my personal machine:
+
 ```bash
 $ ls
 Applications   Library     Public
 Desktop        Movies      Videos
 Documents      Music
 Downloads      Pictures
+$
+```
+
+On the cluster:
+
+```bash
+$ ls
+[TODO]
 $
 ```
 
@@ -176,14 +199,53 @@ $
 
 </div>
 
+# Make a new directory
+
+```
+$ mkdir example
+$ ls
+example
+```
+
 # Change the working directory with `cd`
 
-> `cd` into your scratch directory.
+```
+$ cd example
+$ pwd
+/nfs/home/jmill165/example
+```
+
+# Change the working directory with `cd`
+
+`cd` to your scratch directory.
+
+**Variables** begin with a dollar sign `$` and are often (but not always) typed
+in all uppercase:
 
 ```bash
 $ cd $SCRATCHDIR
 $ pwd
-/lustre/isaac/scratch/NETID
+/lustre/isaac24/scratch/jmill165
+```
+
+# Change the working directory with `cd`
+
+`cd` to your home directory
+
+```bash
+$ cd
+$ pwd
+/nfs/home/jmill165
+```
+
+# Change the working directory with `cd`
+
+`cd` back to the directory you were in previously
+
+```bash
+$ cd -
+$ pwd
+/lustre/isaac24/scratch/jmill165
 ```
 
 # There are lots of commands!
