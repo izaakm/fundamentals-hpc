@@ -274,7 +274,7 @@ List the contents of your home directory with extra information:
 
 1.  Change your working directory to your scratch directory.
 2.  Create a directory called "data".
-3.  Inside the "data" directory, create three subdirectories: "raw",  downloads", and "p"ocessed .
+3.  Inside the "data" directory, create three subdirectories: "raw", "downloads", and "pocessed".
 
 # Exercise: File and Directory Manipulation
 
