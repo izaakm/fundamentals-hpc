@@ -20,10 +20,12 @@ title: Project organization and Git
     echo "# My Project" >> README.md
     git add README.md
     git commit -m "Add README"
+
     mkdir src/example
     touch src/example/__init__.py
     git add src/example/__init__.py
     git commit -m "Initialize example package"
+
     touch src/01-fetch-data.sh
     chmod +x src/01-fetch-data.sh
     touch src/02-verify-data.sh
@@ -45,7 +47,18 @@ title: Project organization and Git
     echo "Source data from SOURCE" >> README.md
     git status
     git diff
-    git commit --all -m README.md
+    git commit --all -m 'Update README'
 
+    git log
+    git log --patch
 
+    echo "mkdir data/derived" >> src/03-proc-data.sh
+    echo "cp data/raw/*.csv data/derived/" >> src/03-proc-data.sh
+    chmod +x src/03-proc-data.sh
+    git add src
+    git commit --all -m 'Add process script'
+
+    ./src/03-proc-data.sh
+    ls data
+    ls -R data
 
