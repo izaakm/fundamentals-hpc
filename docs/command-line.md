@@ -24,7 +24,7 @@ terminal (aka, "terminal emulator)
 shell  
 : a program that allows a user to pass commands to the operating system of their computer
 
-```sh
+```
 $ echo "Hello world!"
 Hello world!
 $
@@ -176,6 +176,13 @@ typing running commands with these characters:
 \*\* There is no "trash" or "recycle bi" !!! You cannot recover deleted files.
 
 
+# Change to your scratch directory
+
+```bash
+cd /lustre/isaac24/scratch/<netid>
+```
+
+
 # Make a new directory
 
 ```
@@ -184,6 +191,7 @@ $ ls
 example
 ```
 
+
 # Change the working directory with `cd`
 
 ```
@@ -191,6 +199,7 @@ $ cd example
 $ pwd
 /nfs/home/jmill165/example
 ```
+
 
 # Change the working directory with `cd`
 
