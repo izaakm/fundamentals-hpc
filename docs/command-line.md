@@ -309,12 +309,6 @@ aa
 ```
 
 
-# Exercise: File and Directory Manipulation
-
-Q: What command line options could you use with `cp`, `mv` to avoid
-accidentally overwriting files?
-
-
 # Exercise: Deleting files
 
 1.  Create a test file `foo.txt`
@@ -330,11 +324,64 @@ accidentally overwriting files?
     - Use `rm -r` to delete directories *and their contents* (**use with caution!**).
 
 
+[^1]: <https://oit.utk.edu/hpsc/isaac-open-enclave-new-kpb/system-overview-cluster-at-kpb/>
+
+
+# Absolute and relative paths
+
+
+Absolute path
+
+```bash
+cd
+mkdir foo bar
+cd /nfs/home/<netid>/foo
+cd /nfs/home/<netid>/bar
+```
+
+```bash
+cd /lustre/isaac24/scratch/<netid>
+cd $SCRATCHDIR
+```
+
+Relative path
+
+```bash
+cd
+mkdir foo bar
+cd foo
+cd ../bar
+```
+
+`.`
+: The current working directory
+
+`..`
+: The parent directory relative to the current working directory
+
+```bash
+ls -la
+```
+
+`.<something>`
+: A hidden file or directory
+
+
+# Read the manual
+
+Manual `man` pages and `less`
+
+```bash
+man cp
+```
+
 # Exercise: File and Directory Manipulation
+
+Q: What command line options could you use with `cp`, `mv` to avoid
+accidentally overwriting files?
 
 Q: What command line options could you use with `rm` to avoid accidentally
 deleting files?
 
-[^1]: <https://oit.utk.edu/hpsc/isaac-open-enclave-new-kpb/system-overview-cluster-at-kpb/>
 
 <!-- END -->
