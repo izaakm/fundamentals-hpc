@@ -11,12 +11,12 @@ title: Intro to Command Line
 <!-- You need to know ... -->
 
 1. How to work with files and directories: move around with `cd`
-3. The most common unix/linux commands: `cat`, `ls`, `mkdir`, `mv`, `rm`
-5. How to change a program's behavior with options ("flags"), e.g. `ls` vs `ls -l`
-2. The meaning of **absolute** and **relative** paths: how to access files located in directories
-4. How to get help: how to find out more about what a Unix command does, `man`
-6. What the terms **standard input** ("standard in") and **standard output** ("standard out") mean
-7. How to redirect ("pipe") the output of one program into the input of the other
+1. The most common unix/linux commands: `cat`, `ls`, `mkdir`, `mv`, `rm`
+1. How to change a program's behavior with options ("flags"), e.g. `ls` vs `ls -l`
+1. The meaning of **absolute** and **relative** paths: how to access files located in directories
+1. How to get help: how to find out more about what a Unix command does, `man`
+1. Use the wildcard ("glob" `*`) to gather multiple files or directories
+1. How to redirect the output of one program into the input of the other
 
 
 # Terminology
@@ -340,6 +340,10 @@ cd /nfs/home/<netid>/bar
 ```
 
 ```bash
+cd ~
+```
+
+```bash
 cd /lustre/isaac24/scratch/<netid>
 cd $SCRATCHDIR
 ```
@@ -367,6 +371,42 @@ ls -la
 : A hidden file or directory
 
 
+# Tab completion
+
+```bash
+cd /lu<TAB>
+```
+
+```bash
+cd /lustre
+```
+
+```bash
+cd /lustre/<TAB>
+```
+
+???
+
+
+# Glob `*`
+
+```bash
+cd
+touch foo bar buzz
+echo f*
+echo b*
+```
+
+Use `echo` to test commands:
+
+```bash
+echo rm b*
+```
+
+If it looks good, just use the up arrow to show the command again, then delete
+the `echo`.
+
+
 # Read the manual
 
 Manual `man` pages and `less`
@@ -375,6 +415,9 @@ Manual `man` pages and `less`
 man cp
 ```
 
+Or Google `linux man cp`
+
+
 # Exercise: File and Directory Manipulation
 
 Q: What command line options could you use with `cp`, `mv` to avoid
@@ -382,6 +425,28 @@ accidentally overwriting files?
 
 Q: What command line options could you use with `rm` to avoid accidentally
 deleting files?
+
+
+# Redirect the out put of a command ...
+
+... to a file and append to the file (if it exists):
+
+```bash
+echo "foo bar" >> foo.txt
+```
+
+... to a file and OVERWRITE that file:
+
+```bash
+echo "foo bar" > foo.txt
+```
+
+... to another command:
+
+```bash
+echo "foo bar" | grep foo
+```
+
 
 
 <!-- END -->
