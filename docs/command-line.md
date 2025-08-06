@@ -2,7 +2,9 @@
 title: Intro to Command Line
 ---
 
+
 # Command Line Basics
+
 
 # What do you need to know to get started?
 
@@ -15,6 +17,7 @@ title: Intro to Command Line
 4. How to get help: how to find out more about what a Unix command does, `man`
 6. What the terms **standard input** ("standard in") and **standard output** ("standard out") mean
 7. How to redirect ("pipe") the output of one program into the input of the other
+
 
 # Terminology
 
@@ -50,6 +53,7 @@ Or just the command:
 ```bash
 ls
 ```
+
 
 # Disambiguation
 
@@ -94,6 +98,7 @@ There are two ways to use the command line on ISAAC-NG:
 4.  Enter your password (note that the cursor will NOT move as you type).
 5.  When prompted, use DUO to authenticate by typing `1` and then press the <kbd>Enter</kbd> key.
 
+
 # Where am I?
 
 In your shell, all commands are relative to the *current working directory*.
@@ -108,6 +113,7 @@ $ pwd
 /nfs/home/jmill165
 $
 ```
+
 
 # What's in the current working directory?
 
@@ -160,6 +166,7 @@ $
 | `mv <source> <directory>` \* | move `<source>` (file or directory) into `<directory>` |
 | `mv <source> <target>` \*\*  | rename `<source>` (file or directory) to `<target>` |
 | `rm -i <filename>`           | remove (delete\*) file named `<file>` |
+| `echo <your text> >> <filename>`        | write `<your text>` to the file `<filename>` |
 
 **Special characters**
 
@@ -173,7 +180,7 @@ typing running commands with these characters:
 
 \* Be careful not to overwrite existing files when using `cp` and `mv`.
 
-\*\* There is no "trash" or "recycle bi" !!! You cannot recover deleted files.
+\*\* There is no "trash" or "recycle bin"!!! You cannot recover deleted files.
 
 
 # Change to your scratch directory
@@ -208,7 +215,7 @@ $ pwd
 **Variables** begin with a dollar sign `$` and are often (but not always) typed
 in all uppercase:
 
-```bash
+```
 $ cd $SCRATCHDIR
 $ pwd
 /lustre/isaac24/scratch/jmill165
@@ -218,7 +225,7 @@ $ pwd
 
 `cd` to your home directory
 
-```bash
+```
 $ cd
 $ pwd
 /nfs/home/jmill165
@@ -228,7 +235,7 @@ $ pwd
 
 `cd` back to the directory you were in previously
 
-```bash
+```
 $ cd -
 $ pwd
 /lustre/isaac24/scratch/jmill165
@@ -238,6 +245,7 @@ $ pwd
 
 Check out this [bash Cheatsheet](https://quickref.me/bash.html)
 
+
 # Options and Arguments
 
 List the contents of your home directory with extra information:
@@ -245,6 +253,7 @@ List the contents of your home directory with extra information:
     $ ls -l /nfs/home/NETID
          ^^                 option
             ^^^^^^^^^^^^^^^ argument
+
 
 # Exercise: Navigating the Filesystem
 
@@ -256,11 +265,13 @@ List the contents of your home directory with extra information:
     - Use the full path.
     - Use the `SCRATCHDIR` variable.
 
+
 # Exercise: Setup your data directory
 
 1.  Change your working directory to your scratch directory.
 2.  Create a directory called "data".
 3.  Inside the "data" directory, create three subdirectories: "raw", "downloads", and "pocessed".
+
 
 # Exercise: File and Directory Manipulation
 
@@ -271,9 +282,10 @@ List the contents of your home directory with extra information:
 4.  Run `mv a c` ...
     - Check the file contents ... what happens?
 
+
 # Exercise: File and Directory Manipulation
 
-```bash
+```
 $ echo aa > a ; echo bb > b ; echo cc > c
 $ ls
 a   b   c
@@ -296,6 +308,7 @@ aa
 aa
 ```
 
+
 # Exercise: File and Directory Manipulation
 
 Q: What command line options could you use with `cp`, `mv` to avoid
@@ -311,11 +324,16 @@ accidentally overwriting files?
 # Exercise: Deleting directories
 
 1. Create a test directory `bar`
-3. Remove the `bar` directory ...
+3. Remove the directory with `rm bar` ... what happens?
     - Use `rm` for deleting *files*.
     - Use `rmdir` to delete *empty directories* (safer option).
     - Use `rm -r` to delete directories *and their contents* (**use with caution!**).
 
+
+# Exercise: File and Directory Manipulation
+
+Q: What command line options could you use with `rm` to avoid accidentally
+deleting files?
 
 [^1]: <https://oit.utk.edu/hpsc/isaac-open-enclave-new-kpb/system-overview-cluster-at-kpb/>
 
