@@ -4,17 +4,6 @@ title: Intro to Command Line
 
 # Command Line Basics
 
-> *How not to waste your time*
->
-> Your solutions will always be more natural and more straightforward when done
-> and automated with a simple shell script or a makefile.
->
-> ~ Biostars Handbook
-
-# Do you need to know how to use the command line?
-
-Yes. The command line is a tool. The command line is to bioinformaticians what a hammer is to a carpenter.
-
 # What do you need to know to get started?
 
 <!-- You need to know ... -->
@@ -27,12 +16,10 @@ Yes. The command line is a tool. The command line is to bioinformaticians what a
 6. What the terms **standard input** ("standard in") and **standard output** ("standard out") mean
 7. How to redirect ("pipe") the output of one program into the input of the other
 
-# What is a terminal?
+# Terminology
 
 terminal (aka, "terminal emulator)
 : a program that runs a shell [...?]
-
-# What is a shell?
 
 shell  
 : a program that allows a user to pass commands to the operating system of their computer
@@ -46,9 +33,7 @@ $
 Type commands at the prompt `$`. If you don't see the prompt, the computer is
 still doing something.
 
-# What is the prompt?
-
-It shows basic login information followed by a `$` or `%`.
+The prompt shows basic login information followed by a `$` or `%`.
 
 ```
 [USERNAME@NODE] $
@@ -80,11 +65,14 @@ terminal
 Linux  
 : an operating system
 
+
 # Logging in
 
 There are two ways to use the command line on ISAAC-NG:
 
-- `ssh` via your computer's Terminal application (or similar). For more information, see: <br/><https://oit.utk.edu/hpsc/isaac-open-enclave-new-kpb/access-and-login-isaac-ng/>
+- `ssh` via your computer's Terminal application (or similar). For more
+  information, see:
+  <br/><https://oit.utk.edu/hpsc/isaac-open-enclave-new-kpb/access-and-login-isaac-ng/>
 - Open OnDemand \> "Clusters" \>  ISAAC Shell Access"
 
 
@@ -106,27 +94,25 @@ There are two ways to use the command line on ISAAC-NG:
 4.  Enter your password (note that the cursor will NOT move as you type).
 5.  When prompted, use DUO to authenticate by typing `1` and then press the <kbd>Enter</kbd> key.
 
-# Some commands give you information
+# Where am I?
 
-<div style="font-size: 0.8em">
+In your shell, all commands are relative to the *current working directory*.
 
-| Command                   | What it does |
-| ----                      | ---- |
-| `pwd`                     | print current working directory |
-| `ls`                      | list files in the current working directory |
-| `cat <filename>`          | print the contents of the file `<filename>` |
-| `head <filename>`         | first 10 lines of `<filename>` |
-| `tail <filename>`         | last 10 lines of `<filename>` |
-| `wc <filename>`           | number of characters, words, and lines in `<filename>` |
-| `grep <query> <filename>` | search `<filename>` for text `<query>` |
-| `history`                 | your command history |
-| `echo <your text>`        | print `<your text>` to the terminal |
+The `pwd` command *print the working directory*.
 
-</div>
+Type the command `pwd` at the prompt, then press the <kbd>Return</kbd> or
+<kbd>Enter</kbd> key to run it.
 
-# Your first command!
+```bash
+$ pwd
+/nfs/home/jmill165
+$
+```
 
-Type the command `ls` at the prompt, then press the <kbd>Return</kbd> or <kbd>Enter</kbd> key to run it:
+# What's in the current working directory?
+
+Type the command `ls` at the prompt, then press the <kbd>Return</kbd> or
+<kbd>Enter</kbd> key to run it:
 
 On my personal machine:
 
@@ -147,33 +133,23 @@ $ ls
 $
 ```
 
-# Special characters
 
-:hand: Slow down! Be careful before typing running commands with these
-characters:
+# Some commands give you information
 
-     . / > \ | ~ * $
+| Command                   | What it does |
+| ----                      | ---- |
+| `pwd`                     | print current working directory |
+| `ls`                      | list files in the current working directory |
+| `cat <filename>`          | print the contents of the file `<filename>` |
+| `head <filename>`         | first 10 lines of `<filename>` |
+| `tail <filename>`         | last 10 lines of `<filename>` |
+| `wc <filename>`           | number of characters, words, and lines in `<filename>` |
+| `grep <query> <filename>` | search `<filename>` for text `<query>` |
+| `history`                 | your command history |
+| `echo <your text>`        | print `<your text>` to the terminal |
 
-... and many more!
-
-Special characters are context-dependent.
-
-
-# What is the *working directory*?
-
-In your shell, all commands are relative to the *current working directory*.
-
-Use the `pwd` command to print the working directory:
-
-```bash
-$ pwd
-/nfs/home/jmill165
-$
-```
 
 # Some commands change things
-
-<div style="font-size: 0.8em">
 
 | Command                      | What it does |
 | ----                         | ---- |
@@ -185,19 +161,20 @@ $
 | `mv <source> <target>` \*\*  | rename `<source>` (file or directory) to `<target>` |
 | `rm -i <filename>`           | remove (delete\*) file named `<file>` |
 
-</div>
+**Special characters**
 
-<div class="footnote">
+Some characters do different things depending on the context. Be careful before
+typing running commands with these characters:
+
+     . / > \ | ~ * $
+
+... and many more!
+
 
 \* Be careful not to overwrite existing files when using `cp` and `mv`.
 
-</div>
-
-<div class="footnote">
-
 \*\* There is no "trash" or "recycle bi" !!! You cannot recover deleted files.
 
-</div>
 
 # Make a new directory
 
