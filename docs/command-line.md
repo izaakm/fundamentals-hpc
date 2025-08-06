@@ -415,7 +415,7 @@ Manual `man` pages and `less`
 man cp
 ```
 
-Or Google `linux man cp`
+(Or Google `linux man cp`.)
 
 Manual `man` pages will open in a program called `less`. Use the arrows to
 scroll up/down, and type <kbd>q</kbd> to quit. Type <kbd>?</kbd> for help.
