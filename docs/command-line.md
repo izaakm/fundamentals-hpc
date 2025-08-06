@@ -273,42 +273,6 @@ List the contents of your home directory with extra information:
 3.  Inside the "data" directory, create three subdirectories: "raw", "downloads", and "pocessed".
 
 
-# Exercise: File and Directory Manipulation
-
-1.  Create a `tmp` directory and `cd` into it.
-2.  Create some test files, `a`, `b`, and `c`, and add some sample text to each one.
-3.  Run `cp a b` ...
-    - Check the file contents ... what happened?
-4.  Run `mv a c` ...
-    - Check the file contents ... what happens?
-
-
-# Exercise: File and Directory Manipulation
-
-```
-$ echo aa > a ; echo bb > b ; echo cc > c
-$ ls
-a   b   c
-$ cat *
-aa
-bb
-cc
-$ cp a b
-$ ls
-a   b   c
-$ cat *
-aa
-aa
-cc
-$ mv a c
-$ ls
-b   c
-$ cat *
-aa
-aa
-```
-
-
 # Exercise: Deleting files
 
 1.  Create a test file `foo.txt`
@@ -448,6 +412,43 @@ echo "foo bar" > foo.txt
 ```bash
 echo "foo bar" | grep foo
 ```
+
+
+# Exercise: File and Directory Manipulation
+
+1.  Create a `tmp` directory and `cd` into it.
+2.  Create some test files, `a`, `b`, and `c`, and add some sample text to each one.
+3.  Run `cp a b` ...
+    - Check the file contents ... what happened?
+4.  Run `mv a c` ...
+    - Check the file contents ... what happens?
+
+
+# Exercise: File and Directory Manipulation
+
+```
+$ echo aa > a ; echo bb > b ; echo cc > c
+$ ls
+a   b   c
+$ cat *
+aa
+bb
+cc
+$ cp a b
+$ ls
+a   b   c
+$ cat *
+aa
+aa
+cc
+$ mv a c
+$ ls
+b   c
+$ cat *
+aa
+aa
+```
+
 
 
 
