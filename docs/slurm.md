@@ -221,14 +221,17 @@ When you need to run basically the same command on many different files
 
 The following would be analogous:
 
-- sbatch:</br>
-  `$ sbatch --array 0-3`
-- bash:</br>
-  `$ seq 0 3`
-- R:</br>
-  `> seq(0,3)`
-- Python:</br>
-  `>>> range(0,3)`
+sbatch
+: `$ sbatch --array 0-3`
+
+bash
+: `$ seq 0 3`
+
+R
+: `> seq(0,3)`
+
+Python
+: `>>> range(0,3)`
 
 
 # Job Arrays
@@ -280,14 +283,11 @@ number. For example:
 
 - `--array=0-15:4` is equivalent to `--array=0,4,8,12`.
 
-<div class="footnote">
 ~ <https://slurm.schedmd.com/sbatch.html#OPT_array>
-</div>
 
 
 # Job Arrays -- Fastqc
 
-<div style="font-size: 0.9em;">
 ```bash
 #!/usr/bin/env bash
 #SBATCH <your sbatch directives>
@@ -305,7 +305,6 @@ echo "Found ${#fastq_files[@]} fastq files."
 
 fastqc "${fastq_files[$i]}" -o ./fastqc
 ```
-</div>
 
 
 
