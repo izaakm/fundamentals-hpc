@@ -395,7 +395,7 @@ deleting files?
 
 # Redirect the out put of a command ...
 
-... to a file and append to the file (if it exists):
+... to a file and append to the file (if it exists, otherwise, create it):
 
 ```bash
 echo "foo bar" >> foo.txt
