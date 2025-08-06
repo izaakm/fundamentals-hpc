@@ -87,7 +87,7 @@ There are two ways to use the command line on ISAAC-NG:
 
 1.  On macOS or Linux, open your "Terminal" app.
 2.  Use the `ssh` command to connect to ISAAC-NG:
-    ```bash
+    ```
     $ ssh <YOUR NETID>@login.isaac.utk.edu
     ```
 3.  If this is your first time logging in, type `yes` to accept the key.
@@ -103,7 +103,7 @@ The `pwd` command *print the working directory*.
 Type the command `pwd` at the prompt, then press the <kbd>Return</kbd> or
 <kbd>Enter</kbd> key to run it.
 
-```bash
+```
 $ pwd
 /nfs/home/jmill165
 $
@@ -116,7 +116,7 @@ Type the command `ls` at the prompt, then press the <kbd>Return</kbd> or
 
 On my personal machine:
 
-```bash
+```
 $ ls
 Applications   Library     Public
 Desktop        Movies      Videos
@@ -127,7 +127,7 @@ $
 
 On the cluster:
 
-```bash
+```
 $ ls
 [TODO]
 $
