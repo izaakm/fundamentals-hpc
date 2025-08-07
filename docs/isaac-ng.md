@@ -12,20 +12,15 @@ title: Orientation to ISAAC-NG
 
 # How to get help
 
-1.  Join us in Office Hours
-    - TR 11 AM - 12 PM
-    - Zoom link: <https://tiny.utk.edu/BCSOfficeHours>
-2.  Submit a Service Request
+***It's on the OIT HPSC homepage: <https://oit.utk.edu/hpsc>***
+
+- Join us in Office Hours
+    - TR 11 AM -- 12 PM
+    - <https://tiny.utk.edu/BCSOfficeHours> (opens in Zoom)
+- Submit a Service Request
     - See the OIT HPSC Homepage <https://oit.utk.edu/hpsc>
-3.  OIT HPSC Workshop Recordings: <https://oit.utk.edu/hpsc/overview/workshop-recordings/>
-
-:telephone_receiver: Or call the OIT Help Desk at (865) 974-9900
-
-<div class="footer">
-
-:point_up: It's on the OIT HPSC homepage: <https://oit.utk.edu/hpsc>
-
-</div>
+- OIT HPSC Workshop Recordings: <https://oit.utk.edu/hpsc/overview/workshop-recordings/>
+- Or call the OIT Help Desk at (865) 974-9900
 
 
 # Submit a Service Request (aka Ticket)
