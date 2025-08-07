@@ -6,21 +6,23 @@ title: Orientation to ISAAC-NG
 
 <!--<img src="https://docs.google.com/drawings/d/e/2PACX-1vRR3ZAfT-OBAAbvKqJqeb7HHIh6_Z-eArWF_PMZEaJdiFy-eG3Gk2wyWuWkZRkCdRXG2AOyQB9LOcQX/pub?w=1920&h=1080" />-->
 
-![][img_bang_hompage]
+[ ![][img_bang_hompage] ][hpsc_homepage]
 
+[hpsc_homepage]: https://oit.utk.edu/hpsc/
 [img_bang_hompage]: https://docs.google.com/drawings/d/e/2PACX-1vRR3ZAfT-OBAAbvKqJqeb7HHIh6_Z-eArWF_PMZEaJdiFy-eG3Gk2wyWuWkZRkCdRXG2AOyQB9LOcQX/pub?w=1920&h=1080
 
 # How to get help
 
 ***It's on the OIT HPSC homepage: <https://oit.utk.edu/hpsc>***
 
-- Join us in Office Hours
-    - TR 11 AM -- 12 PM
+- Join us in Office Hours: TR 11 AM -- 12 PM
     - <https://tiny.utk.edu/BCSOfficeHours> (opens in Zoom)
 - Submit a Service Request
-    - See the OIT HPSC Homepage <https://oit.utk.edu/hpsc>
-- OIT HPSC Workshop Recordings: <https://oit.utk.edu/hpsc/overview/workshop-recordings/>
-- Or call the OIT Help Desk at (865) 974-9900
+    - <https://utk.teamdynamix.com/TDClient/2277/OIT-Portal/Requests/ServiceDet?ID=45020&_gl=1*1qj81om*_ga*MTA0OTQ5MTE2Ny4xNzUxMDMxNzE3*_ga_275S8CRNYW*czE3NTQ1ODEzMDIkbzQ1JGcwJHQxNzU0NTgxMzAyJGo2MCRsMCRoMA..>
+- HPSC Instructional Videos
+    - <https://oit.utk.edu/hpsc/overview/workshop-recordings/>
+- Or call the OIT Help Desk
+    - (865) 974-9900
 
 
 # Submit a Service Request (aka Ticket)
