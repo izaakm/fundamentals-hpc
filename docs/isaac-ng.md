@@ -2,6 +2,7 @@
 title: Orientation to ISAAC-NG
 ---
 
+
 # HPSC Homepage
 
 <!--<img src="https://docs.google.com/drawings/d/e/2PACX-1vRR3ZAfT-OBAAbvKqJqeb7HHIh6_Z-eArWF_PMZEaJdiFy-eG3Gk2wyWuWkZRkCdRXG2AOyQB9LOcQX/pub?w=1920&h=1080" />-->
@@ -10,6 +11,7 @@ title: Orientation to ISAAC-NG
 
 [hpsc_homepage]: https://oit.utk.edu/hpsc/
 [img_bang_hompage]: https://docs.google.com/drawings/d/e/2PACX-1vRR3ZAfT-OBAAbvKqJqeb7HHIh6_Z-eArWF_PMZEaJdiFy-eG3Gk2wyWuWkZRkCdRXG2AOyQB9LOcQX/pub?w=1920&h=1080
+
 
 # How to get help
 
@@ -25,23 +27,6 @@ title: Orientation to ISAAC-NG
     - (865) 974-9900
 
 
-# Submit a Service Request (aka Ticket)
-
-<!-- slide:twopanel -->
-
-1. Go to <https://oit.utk.edu/hpsc>
-2. Click on <button>**Submit HPSC Service Request**</button>
-
-![][img_hpsc_homepage]
-
-[img_hpsc_homepage]: https://docs.google.com/drawings/d/e/2PACX-1vQoa_un7ISX0wxoc9k-bdcU62ITda5zK13_GpY20r65XOI3FNAsmBoOkVxWz3CiDMbucbwBMwJ9HKXV/pub?w=1440&h=1080
-
-<div class="footer">
-
-:point_up: It's on the OIT HPSC homepage: <https://oit.utk.edu/hpsc>
-
-</div>
-
 # Orientation to ISAAC-NG
 
 1. ISAAC-NG: *What is a cluster, anyway?*
@@ -49,9 +34,7 @@ title: Orientation to ISAAC-NG
 3. Transferring data with Globus
 4. ISAAC-NG in the cloud: Desktop, Jupyter, Rstudio
 
-# Getting Started with ISAAC-NG
-
-# Request an ISAAC user account
+# Getting Started: Request an ISAAC user account
 
 Do this first! Required to access ISAAC resources!
 
@@ -62,29 +45,24 @@ Do this first! Required to access ISAAC resources!
 
 More Details: <https://oit.utk.edu/hpsc/overview/requesting-an-account/>
 
-# Request an ISAAC user account
 
-## Click "Request an ISAAC Account"
+# High Performance Computing (HPC) with ISAAC-NG
 
-![](assets/images/screenshots/oit-utk-edu-hpsc/oit-utk-com-hpsc.png)
+***HPC in a nutshell:***
 
-# Request an ISAAC user account
+HPC gives you access to many physical computers (**compute nodes**) and a lot of data storage.
 
-## Click "I have a UT NetID"
 
-![](assets/images/nics-portal-request-account.png)
+# UTK has 2 clusters
 
-# High Performance Computing with ISAAC-NG
+![][img_figure_isaac_compute_resources]
 
-# HPC in a nutshell
-
-HPC gives you access to many physical computers (**nodes**) and a lot of data storage (**file system**).
+[img_figure_isaac_compute_resources]: https://docs.google.com/drawings/d/e/2PACX-1vQBiMxhBdMieJiyBhqaHv8zAH1Y6rXN7aahVbu9JzjXsnqTHzaYtpWIaThPkckBJFgdFGR5fhGkUJm0/pub?w=1440&h=1080
 
 # HPC Terminology
 
-## *What is a cluster, anyway?*
+***What is a cluster, anyway?***
 
-Important terms
 
 - Cluster
 - Node
@@ -92,30 +70,18 @@ Important terms
 - QoS
 - File System
 
-# *What is a cluster, anyway?*
+cluster
+: a collection of physical computers that all work together
 
-<table>
-<tr>
-<td>
-A **cluster** is made up many physical computers that all work together. Each individual physical computer is called a **node**.
-</td>
-<td>
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/MEGWARE.CLIC.jpg" />
-</td>
-</tr>
-</table>
+node
+: a physical computer in a cluster
 
-# 
+Nodes can be assigned a particular function, eg:
 
-## UTK has 2 clusters
+- login nodes
+- data transfer nodes (DTN)
+- compute nodes
 
-<!--![](assets/images/misc/66-figure-isaac-compute-resources/main.png)-->
-
-<!--<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ3xJi6Dx-moaiyR7OmzKCqtSk3Z1cIWbvJchfHsx6rNSjlwnVnC4QnooNQ_SaYAHAH5gHoJo6ocYUW/pubembed?start=false&loop=false&delayms=60000" frameborder="0" width="1440" height="839" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>-->
-
-![][img_figure_isaac_compute_resources]
-
-[img_figure_isaac_compute_resources]: https://docs.google.com/drawings/d/e/2PACX-1vQBiMxhBdMieJiyBhqaHv8zAH1Y6rXN7aahVbu9JzjXsnqTHzaYtpWIaThPkckBJFgdFGR5fhGkUJm0/pub?w=1440&h=1080
 
 # The ISAAC-NG Cluster
 
@@ -125,43 +91,12 @@ A **cluster** is made up many physical computers that all work together. Each in
 
 [img_isaacng_cluster]: https://docs.google.com/drawings/d/e/2PACX-1vTAWXOCVwjlC6jtMIFi26SzfQIPxEAmDHc6mGSm6u3VdY8kLT6eHXkaLSlWFS9AzKdw6TtaXlQ9JHQe/pub?w=1440&h=1080
 
-# What are nodes?
-
-nodes  
-: physical computers that work together as a **cluster**
-
-Nodes can be assigned a particular function, eg:
-
-<table>
-
-<tr>
-
-<td>
-
-- login nodes
-- data transfer nodes (DTN)
-- compute nodes
-
-</td>
-
-<td>
-
-![](assets/images/misc/34-isaac-ng-cluster/main.png)
-</td>
-
-</tr>
-
-</table>
-
-# The ISAAC-NG Cluster
-
 - 2 login nodes (`login1`, `login2`)
 - 2 data transfer nodes (`dtn1`, `dtn2`)
 - \>200 compute nodes<br/> Homepage \> ISAAC Next Gen \> System Overview [^1]
 
-# Compute nodes
 
-## Partition and QoS
+# Compute nodes
 
 # Partitions and QoS ...
 
