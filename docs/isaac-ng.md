@@ -116,9 +116,13 @@ A **cluster** is made up many physical computers that all work together. Each in
 
 ## UTK has 2 clusters
 
-![](assets/images/misc/66-figure-isaac-compute-resources/main.png)
+<!--![](assets/images/misc/66-figure-isaac-compute-resources/main.png)-->
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ3xJi6Dx-moaiyR7OmzKCqtSk3Z1cIWbvJchfHsx6rNSjlwnVnC4QnooNQ_SaYAHAH5gHoJo6ocYUW/pubembed?start=false&loop=false&delayms=60000" frameborder="0" width="1440" height="839" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<!--<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ3xJi6Dx-moaiyR7OmzKCqtSk3Z1cIWbvJchfHsx6rNSjlwnVnC4QnooNQ_SaYAHAH5gHoJo6ocYUW/pubembed?start=false&loop=false&delayms=60000" frameborder="0" width="1440" height="839" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>-->
+
+![][img_figure_isaac_compute_resources]
+
+[img_figure_isaac_compute_resources]: https://docs.google.com/drawings/d/e/2PACX-1vQBiMxhBdMieJiyBhqaHv8zAH1Y6rXN7aahVbu9JzjXsnqTHzaYtpWIaThPkckBJFgdFGR5fhGkUJm0/pub?w=1440&h=1080
 
 # The ISAAC-NG Cluster
 
