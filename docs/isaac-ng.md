@@ -210,23 +210,17 @@ Lustre `/lustre`
 
 | Name    | Quota                       | Location (path)                              |
 |---------|-----------------------------|----------------------------------            |
-| Home    | 50 Gigabytes :frowning:     | `/nfs/home/USERNAME`                         |
+| Home    | 50 Gigabytes :frowning:     | `/nfs/home/<netid>`                         |
 | Scratch | **10 Terabytes** :thumbsup: | `/lustre/isaac24/scratch/<netid>`            |
 | Project | **1 Terabyte**              | `/lustre/isaac24/proj/<project account>`     |
 
-<div class="footnote">
-
-<mark> IMPORTANT: Put all your stuff on Lustre because *NFS is slow and doesn't have much disk space!!!* </mark>
-
-</div>
-
-<div class="footnote">
-
-- There are two **file systems**: NFS (`/nfs`) and Lustre (`/lustre`). You can think of these as two different hard drives.
-- Project directories are owned by the Principal Investigator. Any user that has been *added to the project* will have access to this project directory. There is no project directory for the default account.
-- "storage" $`\neq`$ "me"ory 
-
-</div>
+- There are two **file systems**: NFS (`/nfs`) and Lustre (`/lustre`). You can
+  think of these as two different hard drives.
+- **IMPORTANT:** Put all your stuff on Lustre because *NFS is slow and doesn't
+  have much disk space!!!*
+- Project directories are owned by the Principal Investigator. Any user that
+  has been *added to the project* will have access to this project directory.
+  (The default account `ACF-UTK0011` does NOT have a project directory.)
 
 # Intro to Open OnDemand
 
