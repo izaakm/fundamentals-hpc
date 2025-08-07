@@ -126,7 +126,11 @@ A **cluster** is made up many physical computers that all work together. Each in
 
 # The ISAAC-NG Cluster
 
-![](assets/images/misc/34-isaac-ng-cluster/main.png)
+<!--![](assets/images/misc/34-isaac-ng-cluster/main.png)-->
+
+![][img_isaacng_cluster]
+
+[img_isaacng_cluster]: https://docs.google.com/drawings/d/e/2PACX-1vTAWXOCVwjlC6jtMIFi26SzfQIPxEAmDHc6mGSm6u3VdY8kLT6eHXkaLSlWFS9AzKdw6TtaXlQ9JHQe/pub?w=1440&h=1080
 
 # What are nodes?
 
