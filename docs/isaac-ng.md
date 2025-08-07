@@ -91,9 +91,15 @@ Nodes can be assigned a particular function, eg:
 
 [img_isaacng_cluster]: https://docs.google.com/drawings/d/e/2PACX-1vTAWXOCVwjlC6jtMIFi26SzfQIPxEAmDHc6mGSm6u3VdY8kLT6eHXkaLSlWFS9AzKdw6TtaXlQ9JHQe/pub?w=1440&h=1080
 
-- 2 login nodes (`login1`, `login2`)
-- 2 data transfer nodes (`dtn1`, `dtn2`)
-- \>200 compute nodes<br/> Homepage \> ISAAC Next Gen \> System Overview [^1]
+- 2 login nodes
+    - `login1`, `login2`
+- 2 data transfer nodes
+    - `dtn1`, `dtn2`
+- 200+ compute nodes
+    - Name varies by type, e.g., `<type><number>` like `cmpt0001`
+    - Homepage > ISAAC Next Gen > [System Overview]
+
+[system overview]: <https://oit.utk.edu/hpsc/isaac-open-enclave-new-kpb/system-overview-cluster-at-kpb/>
 
 
 # Compute nodes
@@ -161,7 +167,6 @@ Lustre `/lustre`
 
 ![](assets/images/screenshots/open-ondemand-clusters-shell-access-terminal/main.png)
 
-[^1]: <https://oit.utk.edu/hpsc/isaac-open-enclave-new-kpb/system-overview-cluster-at-kpb/>
 
 # Intro to Globus
 
