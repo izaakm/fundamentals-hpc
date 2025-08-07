@@ -8,7 +8,11 @@ title: Orientation to ISAAC-NG
 
 ![][img_bang_hompage]
 
+![][img_test]
+
 [img_bang_hompage]: https://docs.google.com/drawings/d/e/2PACX-1vRR3ZAfT-OBAAbvKqJqeb7HHIh6_Z-eArWF_PMZEaJdiFy-eG3Gk2wyWuWkZRkCdRXG2AOyQB9LOcQX/pub?w=1920&h=1080
+
+[img_test]: https://docs.google.com/drawings/d/e/2PACX-1vR2-LDotag4dteY8d1w0aZqchJacez2jK-oT2obe6xUmIBUfo9svB6rdb9LlbRRe68wvKyeclo5u7s6/pub?w=960&h=720
 
 # How to get help
 
@@ -31,6 +35,10 @@ title: Orientation to ISAAC-NG
 # Submit a Service Request (aka Ticket)
 
 <!-- slide:twopanel -->
+
+|      |      |
+| :--: | ---- |
+| <https://oit.utk.edu/hpsc><br/>Click on<br/>“**Submit HPSC Service Request**” | ![](assets/images/screenshots/oit-utk-edu-hpsc/oit-utk-com-hpsc.png) |
 
 |      |      |
 | :--: | ---- |
