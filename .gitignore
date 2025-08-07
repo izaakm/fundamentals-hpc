@@ -1,7 +1,7 @@
 *
 .*
 
+!*.md
 !.gitignore
 !Makefile
-!README.md
-!docs
+!docs/
