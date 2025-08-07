@@ -37,7 +37,7 @@ title: Orientation to ISAAC-NG
 <!-- slide:twopanel -->
 
 1. Go to <https://oit.utk.edu/hpsc>
-2. Click on <kbd>**Submit HPSC Service Request**</kbd>
+2. Click on <button>**Submit HPSC Service Request**</button>
 
 ![][img_hpsc_homepage]
 
