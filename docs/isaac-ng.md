@@ -4,7 +4,7 @@ title: Orientation to ISAAC-NG
 
 # HPSC Homepage
 
-<img src="https://docs.google.com/drawings/d/e/2PACX-1vRR3ZAfT-OBAAbvKqJqeb7HHIh6_Z-eArWF_PMZEaJdiFy-eG3Gk2wyWuWkZRkCdRXG2AOyQB9LOcQX/pub?w=1920&h=1080" />
+<!--<img src="https://docs.google.com/drawings/d/e/2PACX-1vRR3ZAfT-OBAAbvKqJqeb7HHIh6_Z-eArWF_PMZEaJdiFy-eG3Gk2wyWuWkZRkCdRXG2AOyQB9LOcQX/pub?w=1920&h=1080" />-->
 
 ![][img_bang_hompage]
 
@@ -12,7 +12,7 @@ title: Orientation to ISAAC-NG
 
 [img_bang_hompage]: https://docs.google.com/drawings/d/e/2PACX-1vRR3ZAfT-OBAAbvKqJqeb7HHIh6_Z-eArWF_PMZEaJdiFy-eG3Gk2wyWuWkZRkCdRXG2AOyQB9LOcQX/pub?w=1920&h=1080
 
-[img_test]: https://docs.google.com/drawings/d/e/2PACX-1vR2-LDotag4dteY8d1w0aZqchJacez2jK-oT2obe6xUmIBUfo9svB6rdb9LlbRRe68wvKyeclo5u7s6/pub?w=960&h=720
+[img_test]: https://docs.google.com/drawings/d/e/2PACX-1vR2-LDotag4dteY8d1w0aZqchJacez2jK-oT2obe6xUmIBUfo9svB6rdb9LlbRRe68wvKyeclo5u7s6/pub?w=1440&h=1080
 
 # How to get help
 
@@ -36,13 +36,12 @@ title: Orientation to ISAAC-NG
 
 <!-- slide:twopanel -->
 
-|      |      |
-| :--: | ---- |
-| <https://oit.utk.edu/hpsc><br/>Click on<br/>“**Submit HPSC Service Request**” | ![](assets/images/screenshots/oit-utk-edu-hpsc/oit-utk-com-hpsc.png) |
+1. Go to <https://oit.utk.edu/hpsc>
+2. Click on <kbd>**Submit HPSC Service Request**</kbd>
 
-|      |      |
-| :--: | ---- |
-| <https://oit.utk.edu/hpsc><br/>Click on<br/>“**Submit HPSC Service Request**” | ![](assets/images/screenshots/oit-utk-edu-hpsc/oit-utk-com-hpsc.png) |
+![][img_hpsc_homepage]
+
+[img_hpsc_homepage]: https://docs.google.com/drawings/d/e/2PACX-1vQoa_un7ISX0wxoc9k-bdcU62ITda5zK13_GpY20r65XOI3FNAsmBoOkVxWz3CiDMbucbwBMwJ9HKXV/pub?w=1440&h=1080
 
 <div class="footer">
 
