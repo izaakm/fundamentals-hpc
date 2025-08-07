@@ -1,8 +1,10 @@
+---
+title: Orientation to ISAAC-NG
+---
+
 # HPSC Homepage
 
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vRR3ZAfT-OBAAbvKqJqeb7HHIh6_Z-eArWF_PMZEaJdiFy-eG3Gk2wyWuWkZRkCdRXG2AOyQB9LOcQX/pub?w=1920&h=1080" />
-
-# Getting Help
 
 # How to get help
 
@@ -15,16 +17,19 @@
 
 :telephone_receiver: Or call the OIT Help Desk at (865) 974-9900
 
-:point_up: It’s on the OIT HPSC homepage: <https://oit.utk.edu/hpsc>
-
 <div class="footer">
+
+:point_up: It’s on the OIT HPSC homepage: <https://oit.utk.edu/hpsc>
 
 </div>
 
+
 # Submit a Service Request (aka Ticket)
 
-|  |  |
-|:--:|----|
+<!-- slide:twopanel -->
+
+|      |      |
+| :--: | ---- |
 | <https://oit.utk.edu/hpsc><br/>Click on<br/>“**Submit HPSC Service Request**” | ![](assets/images/screenshots/oit-utk-edu-hpsc/oit-utk-com-hpsc.png) |
 
 <div class="footer">
@@ -41,8 +46,6 @@
 4.  ISAAC-NG in the cloud: Desktop, Jupyter, Rstudio
 
 # Getting Started with ISAAC-NG
-
-## Request an ISAAC user account
 
 # Request an ISAAC user account
 
