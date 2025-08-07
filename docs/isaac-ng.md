@@ -8,11 +8,7 @@ title: Orientation to ISAAC-NG
 
 ![][img_bang_hompage]
 
-![][img_test]
-
 [img_bang_hompage]: https://docs.google.com/drawings/d/e/2PACX-1vRR3ZAfT-OBAAbvKqJqeb7HHIh6_Z-eArWF_PMZEaJdiFy-eG3Gk2wyWuWkZRkCdRXG2AOyQB9LOcQX/pub?w=1920&h=1080
-
-[img_test]: https://docs.google.com/drawings/d/e/2PACX-1vR2-LDotag4dteY8d1w0aZqchJacez2jK-oT2obe6xUmIBUfo9svB6rdb9LlbRRe68wvKyeclo5u7s6/pub?w=1440&h=1080
 
 # How to get help
 
@@ -195,8 +191,8 @@ quality of service (QoS)
 # Data Storage
 
 file system  
-: handles data storage
-: enables multiple physical computers (nodes) to read/write data to multiple physical hard drives
+: handles data storage on one or more hard drives
+: multiple physical computers (nodes) can read/write data at the same time
 
 There are two **file systems** on ISAAC-NG:
 
@@ -214,10 +210,9 @@ Lustre `/lustre`
 | Scratch | **10 Terabytes** :thumbsup: | `/lustre/isaac24/scratch/<netid>`            |
 | Project | **1 Terabyte**              | `/lustre/isaac24/proj/<project account>`     |
 
-- There are two **file systems**: NFS (`/nfs`) and Lustre (`/lustre`). You can
-  think of these as two different hard drives.
-- **IMPORTANT:** Put all your stuff on Lustre because *NFS is slow and doesn't
-  have much disk space!!!*
+- There are two **file systems**: NFS (`/nfs`) and Lustre (`/lustre`).
+- **IMPORTANT:** Put your data on Lustre because *NFS is slow and doesn't have
+  much disk space!!!*
 - Project directories are owned by the Principal Investigator. Any user that
   has been *added to the project* will have access to this project directory.
   (The default account `ACF-UTK0011` does NOT have a project directory.)
@@ -243,5 +238,9 @@ Lustre `/lustre`
 # Thank you!
 
 
+
+<!-- LINKS -->
+
+[img_test]: https://docs.google.com/drawings/d/e/2PACX-1vR2-LDotag4dteY8d1w0aZqchJacez2jK-oT2obe6xUmIBUfo9svB6rdb9LlbRRe68wvKyeclo5u7s6/pub?w=1440&h=1080
 
 <!-- END -->
