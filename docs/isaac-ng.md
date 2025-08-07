@@ -6,6 +6,10 @@ title: Orientation to ISAAC-NG
 
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vRR3ZAfT-OBAAbvKqJqeb7HHIh6_Z-eArWF_PMZEaJdiFy-eG3Gk2wyWuWkZRkCdRXG2AOyQB9LOcQX/pub?w=1920&h=1080" />
 
+![][img_bang_hompage]
+
+[img_bang_hompage]: https://docs.google.com/drawings/d/e/2PACX-1vRR3ZAfT-OBAAbvKqJqeb7HHIh6_Z-eArWF_PMZEaJdiFy-eG3Gk2wyWuWkZRkCdRXG2AOyQB9LOcQX/pub?w=1920&h=1080
+
 # How to get help
 
 1.  Join us in Office Hours
