@@ -378,9 +378,24 @@ Two main use-cases for branches:
   when you think to yourself, "I wonder what would happen if I tried [X]...."
 
 
+Create a new branch and switch to it at the same time:
+
 ```bash
 git switch -c <branch name>
 ```
+
+Switch to an existing branch:
+
+```bash
+git switch <branch name>
+```
+
+Switch to the previous branch:
+
+```bash
+git switch -
+```
+
 
 ## Collaboration
 
