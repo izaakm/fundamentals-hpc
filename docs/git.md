@@ -24,7 +24,9 @@ title: Project organization and Git
 [xkcd_git]: https://imgs.xkcd.com/comics/git.png
 
 
-# outline
+# A simple example
+
+## Overview
 
     mkdir example
     cd example
@@ -33,11 +35,73 @@ title: Project organization and Git
     git add README.md
     git commit -m "Add README"
 
+## Step-by-step
+
+    mkdir example
+    cd example
+
+Check the contents of the directory:
+
+    ls -la
+
+Then, initialize the Git repository:
+
+    git init .
+
+Check the contents of the directory again:
+
+    ls -la
+
+You should see a new directory, `.git`; that's your "git repository".
+
+    echo "# My Project" >> README.md
+    git add README.md
+    git commit -m "Add README"
+
+`git init`
+: This command creates an empty Git repository - basically a .git directory that stores all of Git's internal files and versions of your files. (~ `man git-init`)
+: Running `git init` in an existing repository **is safe**. It will not overwrite things that are already there. (~ `man git-init`)
+
+`git add <filename>`
+: This command updates the "index" using the current content found in the working tree. (~ `man git-add`)
+: The "index" holds a snapshot of the content of the working tree, and it is this snapshot that is taken as the contents of the next commit. (~ `man git-add`)
+
+`git commit -m "<message>"`
+: Create a new commit containing the current contents of the index and the given log message describing the changes. (~ `man git-commit`)
+
+
+# Exercise: Add some more files and directories
+
+An example project structure (see [Cookiecutter Data
+Science][cookiecuttier_directories] for more details):
+
+[cookiecuttier_directories]: https://cookiecutter-data-science.drivendata.org/#directory-structure
+    "Directory structure"
+
+
+    ├── AUTHORS            <- List of authors and collaborators for this project.
+    ├── CITATION.cff       <- Plain text file with citation information for software and datasets.
+    ├── LICENSE            <- Open-source license if one is chosen
+    ├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
+    ├── README.md          <- The top-level README for developers using this project.
+    ├── data               <- Raw data, derived data, etc.
+    ├── docs               <- A default mkdocs project; see www.mkdocs.org for details
+    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
+    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g. generated with `pip freeze > requirements.txt`
+    └── src                <- Source code for use in this project.
+
+
+## Example: Set up a python module
 
     mkdir src/example
     touch src/example/__init__.py
     git add src/example/__init__.py
     git commit -m "Initialize example package"
+
+
+## Example: Add bash scripts
 
     touch src/01-fetch-data.sh
     chmod +x src/01-fetch-data.sh
@@ -45,6 +109,9 @@ title: Project organization and Git
     chmod +x src/02-verify-data.sh
     git add src/
     git commit -m "Add scripts to fetch and verify source data"
+
+
+# Let's review your project history
 
     git log
     
