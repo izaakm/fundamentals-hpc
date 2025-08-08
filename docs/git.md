@@ -27,6 +27,7 @@ title: Project organization and Git
     git add README.md
     git commit -m "Add README"
 
+
     mkdir src/example
     touch src/example/__init__.py
     git add src/example/__init__.py
@@ -41,6 +42,12 @@ title: Project organization and Git
 
     git log
     
+
+![][xkcd_git_commit]
+
+[xkcd_git_commit]: https://imgs.xkcd.com/comics/git_commit.png
+
+
     mkdir data
     touch data/.gitkeep
     git add data/.gitkeep
@@ -140,4 +147,4 @@ Or, if you're using the typical GitHub workflow (aka, "GitHub Flow")
 1. make changes ...
 1. `git push`
 
-
+<!-- END -->
