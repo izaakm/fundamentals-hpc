@@ -2,6 +2,12 @@
 title: Project organization and Git
 ---
 
+# Git
+
+![][xkcd_git]
+
+[xkcd_git]: https://imgs.xkcd.com/comics/git.png
+
 # Why?
 
     analysis.R
