@@ -1,3 +1,4 @@
+EDITOR ?= vim
 PAGES := docs/*.md
 
 .PHONY: push
@@ -16,3 +17,7 @@ commit: .committed
 	git add $(PAGES)
 	git commit -m "Update pages"
 	touch $@
+
+.PHONY: e
+e:
+	@$(EDITOR) $(PAGES)
