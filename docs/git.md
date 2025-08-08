@@ -296,39 +296,19 @@ git log
 | `git blame <file_path>` | Shows who last modified each line of a file. |
 
 
-## Searching your commit history
+# Searching your commit history
 
 ```bash
-git log | grep
-# also works
+git log | grep <pattern>
 ```
-
-```bash
-git grep
-# how is this different?
-```
-
-`git grep <pattern>`: This command searches for a specific pattern within the current working directory. To search within the entire commit history, you can combine it with `git rev-list --all`:
-
-
-```bash
-git grep <pattern> $(git rev-list --all)
-```
-
-| Command       | Description  |
-| :-                | :---- |
-| `git log -S <string>` | This searches for commits that introduce or remove a specific string. |
-| `git log -G <pattern>` | This searches for commits where the added or removed lines match a given regular expression pattern.|
-| `git log -L :<function_name>:<file_path>`| This allows you to view the history of a specific function or block of code within a file. |
-
 
 ## Searching Commit Messages
 
 | Command       | Description  |
 | :-                | :---- |
 | `git log --grep="<pattern>"` | Filters commits by a pattern in their commit messages (can use regex). |
-| `git log --grep="JIRA-[0-9]+"` | Example to find commits referencing JIRA tickets. |
-| `git log --all --grep="<pattern>"` | Searches commit messages across all branches, [according to GeeksforGeeks](https://www.geeksforgeeks.org/git/how-to-search-git-repository-by-commit-message/). |
+| `git log --all --grep="<pattern>"` | Searches commit messages across all branches. |
+
 
 ## Searching for Changes in Code (Diffs)
 
@@ -336,26 +316,43 @@ git grep <pattern> $(git rev-list --all)
 | :-                | :---- |
 | `git log -p -G <pattern>` | Searches for changes (introductions or removals) in the code that match a regex pattern. |
 | `git log -p -S <string>` | Searches for commits that add or remove a specific string. |
-| `git grep <pattern> $(git rev-list --all)` | Searches for a pattern in all commits, not just the current working directory. |
+| `git log -L :<function_name>:<file_path>`| This allows you to view the history of a specific function or block of code within a file. |
+
+
+# Searching file contents
+
+```bash
+git grep <pattern>
+```
+
+This command searches for a specific pattern within the current working directory.
+
+It's kind of like:
+
+```bash
+find . -type f | xargs grep <pattern>
+```
+
+## The nuclear option
+
+To search within the ***entire commit history***, you can combine it with `git rev-list --all`:
+
+```bash
+git grep <pattern> $(git rev-list --all)
+```
+
+This will search the contents of every version of every file in the repo.
+
 
 # Undo or recover changes
 
-```bash
-git checkout <commit>
-# ... now what???
-```
 
-```bash
-# Find the version you want first (see above), then ...
-git checkout <commit> <filename>
-```
-
-| Command       | Description  |
-| :-                | :---- |
-| `git revert <commit-hash>` | Creates a **new commit** that undoes the changes of a specific commit, without deleting or altering previous history, [according to CloudBees](https://www.cloudbees.com/blog/git-revert-explained). |
-| `git reset --hard <commit-hash>` | DANGEROUS! Resets your branch pointer to a previous commit, discarding all changes made after that commit from the index and working directory. |
-| `git reset --soft <commit-hash>` | Moves the branch pointer to a previous commit, but keeps changes staged (in the index). |
-| `git reset --mixed <commit-hash>` | Moves the branch pointer to a previous commit and unstages changes, but keeps them in the working directory.  |
+| Command           | Description  |
+| :-                | :----        |
+| `git revert <commit>`       | Creates a **new commit** that undoes the changes of a specific commit, without deleting or altering previous history, [according to CloudBees](https://www.cloudbees.com/blog/git-revert-explained). |
+| `git reset --hard <commit>` | DANGEROUS! Resets your branch pointer to a previous commit, discarding all changes made after that commit from the index and working directory. |
+| `git reset --soft <commit>` | Moves the branch pointer to a previous commit, but keeps changes staged (in the index). |
+| `git reset --mixed <commit>` | Moves the branch pointer to a previous commit and unstages changes, but keeps them in the working directory.  |
 
 `git revert` is generally preferred over `git reset` for undoing changes in shared repositories because it preserves history.
 
