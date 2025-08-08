@@ -101,6 +101,15 @@ Verify the settings:
 git config --global --list
 ```
 
+# Track 'empty' directories
+
+```bash
+mkdir data
+touch data/.gitkeep
+git add data/.gitkeep
+git commit -m "Keep data directory"
+```
+
 
 # Exercise: Add some more files and directories
 
@@ -157,16 +166,6 @@ git log
 ![][xkcd_git_commit]
 
 [xkcd_git_commit]: https://imgs.xkcd.com/comics/git_commit.png
-
-
-# Track 'empty' directories
-
-```bash
-mkdir data
-touch data/.gitkeep
-git add data/.gitkeep
-git commit -m "Keep data directory"
-```
 
 
 # Ignoring things
