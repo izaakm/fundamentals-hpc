@@ -302,14 +302,16 @@ You want to work on a shared respository
 1. work
 1. First, `git pull --rebase`, then `git push`
 
-Or, if you're using the typical GitHub workflow (aka, "GitHub Flow")
+Or, if you're using [the typical GitHub workflow (aka, "GitHub
+Flow")][github_flow]:
 
-1. fork the repo
+[github_flow]: https://docs.github.com/en/get-started/using-github/github-flow
+
+1. fork the repo on GitHub
 1. `git clone` from your fork
 1. work ...
 1. `git push`
 1. Open a pull request
-
 
 # Remotes (optional)
 
