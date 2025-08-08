@@ -2,7 +2,11 @@
 title: Project organization and Git
 ---
 
-# Version control
+# Git
+
+## Version control
+
+There are many methods and tools for tracking versions of files. 
 
 ![][phdcomics_finaldoc]
 
@@ -17,13 +21,6 @@ title: Project organization and Git
 <!--thesis-vers3_CD_edits.docx-->
 
 
-# Git
-
-![][xkcd_git]
-
-[xkcd_git]: https://imgs.xkcd.com/comics/git.png
-
-
 # A simple example
 
 ## Overview
@@ -36,6 +33,11 @@ echo "# My Project" >> README.md
 git add README.md
 git commit -m "Add README"
 ```
+
+![][xkcd_git]
+
+[xkcd_git]: https://imgs.xkcd.com/comics/git.png
+
 
 ## Step-by-step
 
