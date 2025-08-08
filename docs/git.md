@@ -161,7 +161,7 @@ git commit -m "Add scripts to fetch and verify source data"
 ```
 
 
-# Let's review your project history
+# View your project history
 
 ```bash
 git log
@@ -362,6 +362,53 @@ git checkout <commit> <filename>
 Be cautious with `git reset --hard`, as it can lead to data loss if used improperly.
 
 
+# Branching
+
+> **Branching** means you diverge from the main line of development and continue to do work without messing with that main line. [1][]
+
+[1]: https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
+
+The default branch is usually `main`.
+
+Two main use-cases for branches:
+
+- If you're collaborating on a repo, you'll want to do your work on a branch,
+  and then merge it back into the `main` branch.
+- For personal (non-collaborative) projects, you'll want to create a branch
+  when you think to yourself, "I wonder what would happen if I tried [X]...."
+
+
+```bash
+git switch -c <branch name>
+```
+
+## Collaboration
+
+```bash
+git switch -c feature
+# Write code ...
+# It works, amazing!
+git commit --all -m "Amazing!"
+git switch -
+git pull --rebase
+git merge -
+git push
+git branch -d feature
+```
+
+## "I wonder what would happen if ..."
+
+
+```bash
+git switch -c this-will-probably-break
+# Write code ...
+# Test it ...
+# It's not working right ...
+# Take a break ...
+git commit --all -m "In progress ..."
+git switch -
+# Back on the main branch, still working as normal
+```
 
 # GitHub for personal use
 
