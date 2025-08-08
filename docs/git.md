@@ -212,6 +212,12 @@ git log
 git log --patch
 ```
 
+-   `--all`: Searches across all branches and tags.
+-   `--oneline`: Provides a concise, single-line summary of each commit.
+-   `-p` or `--patch`: Shows the diff for each commit.
+-   `--name-only`: Lists only the names of files changed in each commit.
+
+
 
 # Track your code, not your data
 
@@ -250,6 +256,36 @@ git log
 # opens in your pager (less), you can search etc.
 ```
 
+-   `git log` commands usually show commits in reverse chronological order (most recent first).
+
+Finding things in your Git history
+
+1\. Viewing your basic commit history
+
+-   `git log`: Displays a list of all commits in the current branch, showing the commit hash, author, date, and commit message.
+-   `git log --oneline`: Provides a more concise view, displaying the first seven characters of the commit hash and the commit message on a single line.
+-   `git log --graph --oneline --decorate`: Creates an ASCII graph visualizing branches, merges, and commits for a clearer understanding of your repository's structure.
+-   `git log -n`: Displays only the last `n` number of commits (e.g., `git log -10` for the last 10 commits). 
+
+3\. Filtering by Date:
+
+-   `git log --since=<date>`: Shows commits made after a specific date.
+-   `git log --until=<date>`: Shows commits made before a specific date.
+-   `git log --after="<date>" --before="<date>"`: Filters commits within a specific date range.
+
+-   `git log --since="<date>"`: Shows commits made after a specific date.
+-   `git log --until="<date>"`: Shows commits made before a specific date.
+-   `git log --after="<date-range>"`: Shows commits made after a relative date (e.g., "1 week ago").
+-   `git log --before="<date-range>"`: Shows commits made before a relative date. 
+
+4\. Examining File History:
+
+-   `git log <file_path>`: Shows the commit history for a specific file.
+-   `git log --follow <file_path>`: Tracks the history of a file even if it has been renamed.
+-   `git blame <file_path>`: Shows who last modified each line of a file.
+
+## Searching for Content within Commits:
+
 ```bash
 git log | grep
 # also works
@@ -261,58 +297,18 @@ git grep
 ```
 
 
-Finding specific information within your Git history can be accomplished using various commands and techniques.
-
-1\. Searching for Content within Commits:
-
--   `git grep <pattern>`: This command searches for a specific pattern within the current working directory. To search within the entire commit history, you can combine it with `git rev-list --all`:
+`git grep <pattern>`: This command searches for a specific pattern within the current working directory. To search within the entire commit history, you can combine it with `git rev-list --all`:
 
 Code
 
 ```
-    git grep <pattern> $(git rev-list --all)
+git grep <pattern> $(git rev-list --all)
 ```
 
 -   `git log -S <string>`: This searches for commits that introduce or remove a specific string. 
 -   `git log -G <pattern>`: This searches for commits where the added or removed lines match a given regular expression pattern.
 -   `git log -L :<function_name>:<file_path>`: This allows you to view the history of a specific function or block of code within a file.
 
-2\. Searching for Commits by Message or Author:
-
--   `git log --grep=<pattern>`: This searches for commits whose messages match the given pattern.
--   `git log --author=<pattern>`: This searches for commits by a specific author.
--   `git log --committer=<pattern>`: This searches for commits by a specific committer.
-
-3\. Filtering by Date:
-
--   `git log --since=<date>`: Shows commits made after a specific date.
--   `git log --until=<date>`: Shows commits made before a specific date.
--   `git log --after="<date>" --before="<date>"`: Filters commits within a specific date range.
-
-4\. Examining File History:
-
--   `git log <file_path>`: Shows the commit history for a specific file.
--   `git log --follow <file_path>`: Tracks the history of a file even if it has been renamed.
--   `git blame <file_path>`: Shows who last modified each line of a file.
-
-5\. Other Useful Options:
-
--   `--all`: Searches across all branches and tags.
--   `--oneline`: Provides a concise, single-line summary of each commit.
--   `-p` or `--patch`: Shows the diff for each commit.
--   `--name-only`: Lists only the names of files changed in each commit.
-
-
-Finding things in your Git history: a guide
-
-Git offers powerful tools for exploring and searching through your project's history. Here's a breakdown of the key commands and techniques: 
-
-1\. Viewing your basic commit history
-
--   `git log`: Displays a list of all commits in the current branch, showing the commit hash, author, date, and commit message.
--   `git log --oneline`: Provides a more concise view, displaying the first seven characters of the commit hash and the commit message on a single line.
--   `git log --graph --oneline --decorate`: Creates an ASCII graph visualizing branches, merges, and commits for a clearer understanding of your repository's structure.
--   `git log -n`: Displays only the last `n` number of commits (e.g., `git log -10` for the last 10 commits). 
 
 2\. Searching within commit history
 
@@ -324,36 +320,8 @@ Git offers powerful tools for exploring and searching through your project's his
     -   `git log -p -G <pattern>`: Searches for changes (introductions or removals) in the code that match a regex pattern.
     -   `git log -p -S <string>`: Searches for commits that add or remove a specific string.
     -   `git grep <pattern> $(git rev-list --all)`: Searches for a pattern in all commits, not just the current working directory.
--   Filtering by Author or Committer:
-    -   `git log --author="<author-name-or-email>"`: Filters commits to show only those made by a specific author, [according to Better Stack](https://betterstack.com/community/questions/how-to-view-git-log-of-one-users-commits/).
-    -   `git log --committer="<committer-name-or-email>"`: Filters commits by the person who committed the changes, even if it's different from the author.
--   Filtering by Date Range:
-    -   `git log --since="<date>"`: Shows commits made after a specific date.
-    -   `git log --until="<date>"`: Shows commits made before a specific date.
-    -   `git log --after="<date-range>"`: Shows commits made after a relative date (e.g., "1 week ago").
-    -   `git log --before="<date-range>"`: Shows commits made before a relative date. 
 
-3\. Pinpointing the origin of specific code
-
--   `git blame <file-path>`: Shows who last modified each line of a file, along with the commit hash and timestamp.
--   `git blame -L <start-line>,<end-line> <file-path>`: Shows the blame for a specific range of lines in a file.
--   `git bisect`: Performs a binary search to find the commit that introduced a bug or specific change, [according to Git documentation](https://git-scm.com/docs/git-bisect). 
-
-4\. Undoing changes in history
-
--   `git revert <commit-hash>`: Creates a new commit that undoes the changes of a specific commit, without deleting or altering previous history, [according to CloudBees](https://www.cloudbees.com/blog/git-revert-explained).
--   `git reset --hard <commit-hash>`: DANGEROUS! Resets your branch pointer to a previous commit, discarding all changes made after that commit from the index and working directory.
--   `git reset --soft <commit-hash>`: Moves the branch pointer to a previous commit, but keeps changes staged (in the index).
--   `git reset --mixed <commit-hash>`: Moves the branch pointer to a previous commit and unstages changes, but keeps them in the working directory. 
-
-Important Notes:
-
--   `git log` commands usually show commits in reverse chronological order (most recent first).
--   Be cautious with `git reset --hard`, as it can lead to data loss if used improperly.
--   `git revert` is generally preferred over `git reset` for undoing changes in shared repositories because it preserves history.
-
-
-# Recovering
+# Undo or recover changes
 
 ```bash
 git checkout <commit>
@@ -365,7 +333,15 @@ git checkout <commit>
 git checkout <commit> <filename>
 ```
 
-# others ???
+-   `git revert <commit-hash>`: Creates a new commit that undoes the changes of a specific commit, without deleting or altering previous history, [according to CloudBees](https://www.cloudbees.com/blog/git-revert-explained).
+-   `git reset --hard <commit-hash>`: DANGEROUS! Resets your branch pointer to a previous commit, discarding all changes made after that commit from the index and working directory.
+-   `git reset --soft <commit-hash>`: Moves the branch pointer to a previous commit, but keeps changes staged (in the index).
+-   `git reset --mixed <commit-hash>`: Moves the branch pointer to a previous commit and unstages changes, but keeps them in the working directory. 
+
+Important Notes:
+
+-   Be cautious with `git reset --hard`, as it can lead to data loss if used improperly.
+-   `git revert` is generally preferred over `git reset` for undoing changes in shared repositories because it preserves history.
 
 
 # GitHub for personal use
