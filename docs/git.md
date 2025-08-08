@@ -396,6 +396,13 @@ Switch to the previous branch:
 git switch -
 ```
 
+List branches:
+
+```bash
+git branch
+git branch --all
+```
+
 
 ## Collaboration
 
