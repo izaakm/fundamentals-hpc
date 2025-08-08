@@ -130,13 +130,13 @@ Science][cookiecuttier_directories] for more details):
     ├── LICENSE            <- Open-source license if one is chosen
     ├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
     ├── README.md          <- The top-level README for developers using this project.
-    ├── data               <- Raw data, derived data, etc.
-    ├── docs               <- A default mkdocs project; see www.mkdocs.org for details
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+    ├── data/              <- Raw data, derived data, etc.
+    ├── docs/              <- A default mkdocs project; see www.mkdocs.org for details
+    ├── notebooks/         <- Jupyter notebooks. Naming convention is a number (for ordering),
+    ├── references/        <- Data dictionaries, manuals, and all other explanatory materials.
+    ├── reports/           <- Generated analysis as HTML, PDF, LaTeX, etc.
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g. generated with `pip freeze > requirements.txt`
-    └── src                <- Source code for use in this project.
+    └── src/               <- Source code for use in this project.
 
 
 ## Example: Set up a python module
