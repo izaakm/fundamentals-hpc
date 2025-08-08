@@ -70,6 +70,22 @@ You should see a new directory, `.git`; that's your "git repository".
 : Create a new commit containing the current contents of the index and the given log message describing the changes. (~ `man git-commit`)
 
 
+## One-time set up
+
+If this is your first time using Git, it may warn you about your username and
+email address. Git always includes this information in commits, but you can
+enter anything you like. Git will prompt you if these are not already set.
+Keep in mind that **this information will be public** if you are using, e.g.,
+GitHub.
+
+    git config --global user.name=<your name>
+    git config --global user.email=<your email>
+
+Verify the settings:
+
+    git config --global --list
+
+
 # Exercise: Add some more files and directories
 
 An example project structure (see [Cookiecutter Data
