@@ -105,6 +105,9 @@ git config --global --list
 
 # Track 'empty' directories
 
+Git tracks files, *not* directories. Adding a `.gitkeep` file to an otherwise
+empty directory is a common convention.
+
 ```bash
 mkdir data
 touch data/.gitkeep
