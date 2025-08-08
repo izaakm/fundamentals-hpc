@@ -2,21 +2,27 @@
 title: Project organization and Git
 ---
 
+# Version control
+
+![][phdcomics_finaldoc]
+
+[phdcomics_finaldoc]: https://phdcomics.com/comics/archive/phd101212s.gif
+
+<!--analysis.R-->
+<!--analysis-vers3.R-->
+<!--analysis2.R-->
+<!--analysis_redo.R-->
+<!--thesis-vers1.docx-->
+<!--thesis-vers2_CD+GM+SW_edits.docx-->
+<!--thesis-vers3_CD_edits.docx-->
+
+
 # Git
 
 ![][xkcd_git]
 
 [xkcd_git]: https://imgs.xkcd.com/comics/git.png
 
-# Why?
-
-    analysis.R
-    analysis-vers3.R
-    analysis2.R
-    analysis_redo.R
-    thesis-vers1.docx
-    thesis-vers2_CD+GM+SW_edits.docx
-    thesis-vers3_CD_edits.docx
 
 # outline
 
