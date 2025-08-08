@@ -219,12 +219,16 @@ git log --patch
 nano src/03-proc-data.sh
 ```
 
-```text
+<div class="text" style="border:1px solid black;">
+
+```bash
 #!/usr/bin/env bash
 
 mkdir -p data/derived
 cp -n data/raw/*.csv data/derived/
 ```
+
+</div>
 
 ```bash
 chmod +x src/03-proc-data.sh
@@ -306,6 +310,7 @@ Or, if you're using [the typical GitHub workflow (aka, "GitHub
 Flow")][github_flow]:
 
 [github_flow]: https://docs.github.com/en/get-started/using-github/github-flow
+[github_flow_old]: https://githubflow.github.io/
 
 1. fork the repo on GitHub
 1. `git clone` from your fork
