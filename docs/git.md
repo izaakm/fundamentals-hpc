@@ -219,16 +219,12 @@ git log --patch
 nano src/03-proc-data.sh
 ```
 
-<div class="text" style="border:1px solid black;">
-
-```bash
-#!/usr/bin/env bash
-
-mkdir -p data/derived
-cp -n data/raw/*.csv data/derived/
-```
-
-</div>
+> ```bash
+> #!/usr/bin/env bash
+> 
+> mkdir -p data/derived
+> cp -n data/raw/*.csv data/derived/
+> ```
 
 ```bash
 chmod +x src/03-proc-data.sh
