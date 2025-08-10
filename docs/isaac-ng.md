@@ -63,24 +63,26 @@ HPC gives you access to many physical computers (**compute nodes**) and a lot of
 
 ***What is a cluster, anyway?***
 
-
-- Cluster
-- Node
-- Partition
-- QoS
-- File System
-
 cluster
 : a collection of physical computers that all work together
 
 node
 : a physical computer in a cluster
+: nodes can be assigned a particular function, e.g.:
 
-Nodes can be assigned a particular function, eg:
+- login node
+- data transfer node (DTN)
+- compute node
 
-- login nodes
-- data transfer nodes (DTN)
-- compute nodes
+partition
+: a group of *compute nodes* the serve a similar purpose (e.g., GPU, "Big Mem")
+
+storage
+: hard drives
+
+file system
+: software for managing data storage
+: there are two different file systems on ISAAC-NG: NFS and Lustre
 
 
 # The ISAAC-NG Cluster
@@ -91,54 +93,17 @@ Nodes can be assigned a particular function, eg:
 
 [img_isaacng_cluster]: https://docs.google.com/drawings/d/e/2PACX-1vTAWXOCVwjlC6jtMIFi26SzfQIPxEAmDHc6mGSm6u3VdY8kLT6eHXkaLSlWFS9AzKdw6TtaXlQ9JHQe/pub?w=1440&h=1080
 
-- 2 login nodes
+- Data Storage
+- Login nodes
     - `login1`, `login2`
-- 2 data transfer nodes
+- Data transfer nodes (DTNs)
     - `dtn1`, `dtn2`
-- 200+ compute nodes
+- Compute nodes
+    - 200+
     - Name varies by type, e.g., `<type><number>` like `cmpt0001`
     - Homepage > ISAAC Next Gen > [System Overview]
 
 [system overview]: <https://oit.utk.edu/hpsc/isaac-open-enclave-new-kpb/system-overview-cluster-at-kpb/>
-
-
-# Compute nodes
-
-# Partitions and QoS ...
-
-The **<u>compute</u> nodes** are further divided into groups called **partitions**.
-
-partition  
-: a group of compute nodes on the cluster, e.g., `campus`, `short`, `campus-gpu`, `campus-bigmem`
-
-quality of service (QoS)  
-: a rule that determines how long you can use a certain **partition**
-
-# Partitions and QoS ...
-
-- Run compute-intensive software on **<u>compute</u> nodes** (*not* on the **login nodes**)
-- Tell the **scheduler** (Slurm) which **partition** (and matching **QoS**) to use, e.g.:
-
-| your job ...       | Partition       | QoS          |
-|------------------|-----------------|--------------|
-| quick?           | `short`         | `short`      |
-| lots of memory?  | `campus-bigmem` | `campus`     |
-| GPU?             | `campus-gpu`    | `campus-gpu` |
-| nothing special? | `campus`        | `campus`     |
-
-# Data Storage
-
-file system  
-: handles data storage on one or more hard drives
-: multiple physical computers (nodes) can read/write data at the same time
-
-There are two **file systems** on ISAAC-NG:
-
-NFS `/nfs`  
-: Think of NFS as your normal hard drive on your computer.
-
-Lustre `/lustre`  
-: Think of Lustre as an external hard drive where you put all of your research data that's too big to fit on your computer's normal hard drive.
 
 # Data Storage
 
@@ -155,24 +120,75 @@ Lustre `/lustre`
   has been *added to the project* will have access to this project directory.
   (The default account `ACF-UTK0011` does NOT have a project directory.)
 
-# Intro to Open OnDemand
+## File systems
 
-\[<a href="open-ondemand.html" target=_blank>Go to slides.</a>\]
+file system  
+: handles data storage on one or more hard drives
+: multiple physical computers (nodes) can read/write data at the same time
 
-# OnDemand - Shell Access
+There are two **file systems** on ISAAC-NG:
 
-![](assets/images/open-ondemand-clusters-menu.png)
+NFS `/nfs`  
+: Think of NFS as your normal hard drive on your computer.
 
-# OnDemand - Shell Access
+Lustre `/lustre`  
+: Think of Lustre as an external hard drive where you put all of your research data that's too big to fit on your computer's normal hard drive.
 
-![](assets/images/screenshots/open-ondemand-clusters-shell-access-terminal/main.png)
+
+# Login nodes
+
+- 2 nodes shared by all users
+- Only for simple tasks, e.g., editing files, submitting jobs to compute nodes
+
+# Data transfer nodes (DTNs)
+
+- 2 nodes shared by all users
+- High speed data transfer
+
+# Compute nodes
+
+- 200+ compute nodes of different types
+- Request an allocation on the compute nodes with Slurm
+
+# Slurm: Partitions and QoS ...
+
+Slurm
+: software for accessing compute resources on the cluster
+
+partition  
+: a group of compute nodes on the cluster, e.g., `campus`, `short`, `campus-gpu`, `campus-bigmem`
+
+quality of service (QoS)  
+: a rule that determines how long you can use a certain **partition**
 
 
-# Intro to Globus
+## Partitions and QoS ...
 
-\[<a href="globus.html" target=_blank>Go to slides.</a>\]
+- Run compute-intensive software on **<u>compute</u> nodes** (*not* on the **login nodes**)
+- Tell the **scheduler** (Slurm) which **partition** (and matching **QoS**) to use, e.g.:
 
-# Thank you!
+| your job ...       | Partition       | QoS          |
+|------------------|-----------------|--------------|
+| quick?           | `short`         | `short`      |
+| lots of memory?  | `campus-bigmem` | `campus`     |
+| GPU?             | `campus-gpu`    | `campus-gpu` |
+| nothing special? | `campus`        | `campus`     |
+
+
+# Web-based access: Open OnDemand
+
+1. File browser
+1. Desktop
+1. Jupyter
+1. Rstudio
+1. Shell access
+
+
+# Data Transfer
+
+1. Command line: `scp`
+1. Web-based: Globus
+
 
 
 
