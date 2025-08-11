@@ -164,16 +164,16 @@ $
 
 # Some commands change things
 
-| Command                      | What it does |
-| ----                         | ---- |
-| `cd`                         | change the current working directory to your home directory |
-| `cd <dirname>`               | change the current working directory to `<dirname>` |
-| `mkdir <dirname>`            | make directory `<dirname>` |
-| `cp <source> <target>` \*    | create a copy of file `<source>` named `<target>` |
-| `mv <source> <directory>` \* | move `<source>` (file or directory) into `<directory>` |
-| `mv <source> <target>` \*\*  | rename `<source>` (file or directory) to `<target>` |
-| `rm -i <filename>`           | remove (delete\*) file named `<file>` |
-| `echo <your text> >> <filename>`        | write `<your text>` to the file `<filename>` |
+| Command                                 |    | What it does |
+| ----                                    | :-: | ---- |
+| `cd`                                    |    | change the current working directory to your home directory |
+| `cd <dirname>`                          |    | change the current working directory to `<dirname>` |
+| `mkdir <dirname>`                       |    | make directory `<dirname>` |
+| `cp <source> <target>`                  | \* | create a copy of file `<source>` named `<target>` |
+| `mv <source> <directory>`               | \* | move `<source>` (file or directory) into `<directory>` |
+| `mv <source> <target>`                  | \*\*  | rename `<source>` (file or directory) to `<target>` |
+| `rm -i <filename>`                      |    | remove (delete\*) file named `<file>` |
+| `echo <your text> >> <filename>`        |    | write `<your text>` to the file `<filename>` |
 
 **Special characters**
 
