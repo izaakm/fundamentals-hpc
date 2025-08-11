@@ -178,6 +178,24 @@ quality of service (QoS)
 1. Rstudio
 1. Shell access
 
+## Open OnDemand: Interactive Apps
+
+Filling out the request form:
+
+- Account: `ACF-UTK011`
+- QOS: `Short (Max Run Time 3 Hours)`
+- Partition: `Short`
+- Node exclude list: [leave empty]
+- Number of hours: `1` (limited by QOS)
+- Number of nodes: `1`
+- Number of CPUs per node: `8`
+    - This should usually be a minimum of `8` and generally a maximum of `48`,
+      depending on the type of compute resources requested.
+- Exclusive node access: `Not Exclusive`
+- Number of GPUs: None
+- Licenses Requested: [leave empty]
+- Features Requested: None
+- Slurm Reservation: [leave empty]
 
 # Data Transfer
 
