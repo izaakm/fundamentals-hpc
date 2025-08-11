@@ -2,8 +2,9 @@
 title: Orientation to ISAAC-NG
 ---
 
+# Introduction to HPC on the ISAAC-NG Cluster
 
-# HPSC Homepage
+## HPSC Homepage
 
 <!--<img src="https://docs.google.com/drawings/d/e/2PACX-1vRR3ZAfT-OBAAbvKqJqeb7HHIh6_Z-eArWF_PMZEaJdiFy-eG3Gk2wyWuWkZRkCdRXG2AOyQB9LOcQX/pub?w=1920&h=1080" />-->
 
@@ -13,7 +14,7 @@ title: Orientation to ISAAC-NG
 [img_bang_hompage]: https://docs.google.com/drawings/d/e/2PACX-1vRR3ZAfT-OBAAbvKqJqeb7HHIh6_Z-eArWF_PMZEaJdiFy-eG3Gk2wyWuWkZRkCdRXG2AOyQB9LOcQX/pub?w=1920&h=1080
 
 
-# How to get help
+# Getting Started: How to get help
 
 ***It's on the OIT HPSC homepage: <https://oit.utk.edu/hpsc>***
 
@@ -26,13 +27,6 @@ title: Orientation to ISAAC-NG
 - Or call the OIT Help Desk
     - (865) 974-9900
 
-
-# Orientation to ISAAC-NG
-
-1. ISAAC-NG: *What is a cluster, anyway?*
-2. Accessing ISAAC-NG with Open OnDemand (web app)
-3. Transferring data with Globus
-4. ISAAC-NG in the cloud: Desktop, Jupyter, Rstudio
 
 # Getting Started: Request an ISAAC user account
 
