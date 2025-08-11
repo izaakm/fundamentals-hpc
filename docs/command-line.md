@@ -54,8 +54,8 @@ Or just the command:
 ls
 ```
 
-Angle brackets often indicate some information specific to you, e.g., your
-NetID:
+Angled brackets (aka, "greather than" and "less than" symbols) often indicate
+some information specific to you that you need to enter, e.g., your NetID:
 
 ```bash
 ls /nfs/home/<netid>
