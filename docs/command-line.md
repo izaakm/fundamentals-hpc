@@ -75,16 +75,16 @@ Linux
 There are two ways to use the command line on ISAAC-NG:
 
 - `ssh` via your computer's Terminal application (or similar). For more
-  information, see:
-  <br/><https://oit.utk.edu/hpsc/isaac-open-enclave-new-kpb/access-and-login-isaac-ng/>
-- Open OnDemand \> "Clusters" \>  ISAAC Shell Access"
+  information, see: [Access and Login on ISAAC-NG][]
+- Open OnDemand > "Clusters" > "ISAAC Shell Access"
 
+[Access and Login on ISAAC-NG]: https://oit.utk.edu/hpsc/isaac-open-enclave-new-kpb/access-and-login-isaac-ng/
 
 # Exercise: Get a terminal -- Use Open OnDemand (optional)
 
 1. Go to <www.oit.utk/hpsc>
 2. Click the button "Open OnDemand" on the left-hand side
-3. Click "Clusters > ISAAC"
+3. Click "Clusters" > ISAAC Shell Access"
 
 
 # Exercise: Get a terminal -- Log in to the cluster with `ssh` (optional)
