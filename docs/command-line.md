@@ -74,8 +74,8 @@ Linux
 
 There are two ways to use the command line on ISAAC-NG:
 
-- `ssh` via your computer's Terminal application (or similar). For more
-  information, see: [Access and Login on ISAAC-NG][]
+- `ssh` via your computer's Terminal application (or similar).<br/>
+    *For more information, see: [Access and Login on ISAAC-NG][]*
 - Open OnDemand > "Clusters" > "ISAAC Shell Access"
 
 [Access and Login on ISAAC-NG]: https://oit.utk.edu/hpsc/isaac-open-enclave-new-kpb/access-and-login-isaac-ng/
