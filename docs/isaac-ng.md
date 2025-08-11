@@ -188,7 +188,9 @@ Filling out the request form:
 - Node exclude list: [leave empty]
 - Number of hours: `1` (limited by QOS)
 - Number of nodes: `1`
-- Number of CPUs per node: `8`
+- *Number of CPU cores may be listed as, e.g.:*
+    - Number of CPUs per node: `8`
+    - Number of tasks per node: `8`
     - This should usually be a minimum of `8` and generally a maximum of `48`,
       depending on the type of compute resources requested.
 - Exclusive node access: `Not Exclusive`
