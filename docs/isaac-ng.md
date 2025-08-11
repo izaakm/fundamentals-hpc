@@ -88,6 +88,7 @@ file system
 [img_isaacng_cluster]: https://docs.google.com/drawings/d/e/2PACX-1vTAWXOCVwjlC6jtMIFi26SzfQIPxEAmDHc6mGSm6u3VdY8kLT6eHXkaLSlWFS9AzKdw6TtaXlQ9JHQe/pub?w=1440&h=1080
 
 - Data Storage
+    - File systems: NFS, Lustre
 - Login nodes
     - `login1`, `login2`
 - Data transfer nodes (DTNs)
