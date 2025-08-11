@@ -175,7 +175,12 @@ $
 | `rm -i <filename>`                      |       | remove (delete\*) file named `<file>` |
 | `echo <your text> >> <filename>`        |       | write `<your text>` to the file `<filename>` |
 
-**Special characters**
+\* Be careful not to overwrite existing files when using `cp` and `mv`.
+
+\*\* There is no "trash" or "recycle bin"!!! You cannot recover deleted files.
+
+
+## Special characters
 
 Some characters do different things depending on the context. Be careful before
 typing running commands with these characters:
@@ -183,11 +188,6 @@ typing running commands with these characters:
      . / > \ | ~ * $
 
 ... and many more!
-
-
-\* Be careful not to overwrite existing files when using `cp` and `mv`.
-
-\*\* There is no "trash" or "recycle bin"!!! You cannot recover deleted files.
 
 
 # Change to your scratch directory
@@ -266,7 +266,7 @@ List the contents of your home directory with extra information:
 
 1.  Login to the cluster and print the working directory.
 2.  List the contents of the current directory.
-    - Also show hidden files.
+    - Also show hidden files. <!-- REMOVE -->
     - Who is the owner of the files?
 3.  Change your working directory to your scratch directory:
     - Use the full path.
