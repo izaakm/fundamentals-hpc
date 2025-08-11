@@ -201,6 +201,7 @@ Filling out the request form:
 
 # Data Transfer
 
+1. Open OnDemand: Upload and Download small files through the web-app.
 1. Command line: `scp`
 1. Web-based: Globus
 
