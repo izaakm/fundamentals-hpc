@@ -266,7 +266,7 @@ List the contents of your home directory with extra information:
 
 1.  Login to the cluster and print the working directory.
 2.  List the contents of the current directory.
-    - Also show hidden files. <!-- REMOVE -->
+    - ~~Also show hidden files.~~ <!-- REMOVE -->
     - Who is the owner of the files?
 3.  Change your working directory to your scratch directory:
     - Use the full path.
