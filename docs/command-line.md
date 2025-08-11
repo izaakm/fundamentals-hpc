@@ -135,7 +135,7 @@ On the cluster:
 
 ```
 $ ls
-[TODO]
+[Varies. If this is your first time using the cluster, there may be nothing here.]
 $
 ```
 
