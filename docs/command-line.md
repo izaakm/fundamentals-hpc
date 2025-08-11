@@ -424,39 +424,37 @@ echo "foo bar" | grep foo
 # Exercise: File and Directory Manipulation
 
 1.  Create a `tmp` directory and `cd` into it.
-2.  Create some test files, `a`, `b`, and `c`, and add some sample text to each one.
-3.  Run `cp a b` ...
+2.  Create some test files, `a.txt`, `b.txt`, and `c.txt`, and add some sample text to each one.
+3.  Run `cp a.txt b.txt` ...
     - Check the file contents ... what happened?
-4.  Run `mv a c` ...
+4.  Run `mv a.txt c.txt` ...
     - Check the file contents ... what happens?
 
 
 # Exercise: File and Directory Manipulation
 
 ```
-$ echo aa > a ; echo bb > b ; echo cc > c
+$ echo aa > a.txt ; echo bb > b.txt ; echo cc > c.txt
 $ ls
-a   b   c
+a.txt   b.txt   c.txt
 $ cat *
 aa
 bb
 cc
-$ cp a b
+$ cp a.txt b.txt
 $ ls
-a   b   c
+a.txt   b.txt   c.txt
 $ cat *
 aa
 aa
 cc
-$ mv a c
+$ mv a.txt c.txt
 $ ls
-b   c
+b.txt   c.txt
 $ cat *
 aa
 aa
 ```
-
-
 
 
 <!-- END -->
