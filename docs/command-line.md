@@ -54,6 +54,13 @@ Or just the command:
 ls
 ```
 
+Angle brackets often indicate some information specific to you, e.g., your
+NetID:
+
+```bash
+ls /nfs/home/<netid>
+```
+
 
 # Disambiguation
 
@@ -250,7 +257,7 @@ Check out this [bash Cheatsheet](https://quickref.me/bash.html)
 
 List the contents of your home directory with extra information:
 
-    $ ls -l /nfs/home/NETID
+    $ ls -l /nfs/home/<netid>
          ^^                 option
             ^^^^^^^^^^^^^^^ argument
 
