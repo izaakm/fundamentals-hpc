@@ -165,7 +165,6 @@ git commit -m "Add scripts to fetch and verify source data"
 
 ```bash
 git log
-    
 ```
 
 ![][xkcd_git_commit]
