@@ -93,8 +93,8 @@ Keep in mind that **this information will be public** if you are using, e.g.,
 GitHub.
 
 ```bash
-git config --global user.name="<your name>"
-git config --global user.email="<your email>"
+git config --global user.name "<your name>"
+git config --global user.email "<your email>"
 ```
 
 Verify the settings:
@@ -378,7 +378,11 @@ Be cautious with `git reset --hard`, as it can lead to data loss if used improp
 
 [1]: https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
 
-The default branch is usually `main`.
+The default branch is usually `main`. One-time setup:
+
+```bash
+git config --global init.defaultbranch "main"
+```
 
 Two main use-cases for branches:
 
