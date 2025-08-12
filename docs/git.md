@@ -418,7 +418,7 @@ git branch --all
 ```
 
 
-## Collaboration
+## Use-case: Collaboration
 
 ```bash
 git switch -c feature
@@ -432,8 +432,9 @@ git push
 git branch -d feature
 ```
 
-## "I wonder what would happen if ..."
+## Use-case: Personal projects
 
+*"I wonder what would happen if ..."*
 
 ```bash
 git switch -c this-will-probably-break
