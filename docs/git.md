@@ -135,7 +135,8 @@ Science][cookiecuttier_directories] for more details):
     ├── notebooks/         <- Jupyter notebooks. Naming convention is a number (for ordering),
     ├── references/        <- Data dictionaries, manuals, and all other explanatory materials.
     ├── reports/           <- Generated analysis as HTML, PDF, LaTeX, etc.
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g. generated with `pip freeze > requirements.txt`
+    ├── requirements.txt   <- The requirements file for reproducing the analysis environment,
+    │                         e.g. generated with `pip freeze > requirements.txt`
     └── src/               <- Source code for use in this project.
 
 
