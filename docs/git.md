@@ -490,7 +490,7 @@ to work.*
 
 
 Or, if you're using [the typical GitHub workflow (aka, "GitHub
-Flow")][github_flow]:
+Flow"][github_flow]):
 
 [github_flow]: https://docs.github.com/en/get-started/using-github/github-flow
 [github_flow_old]: https://githubflow.github.io/
