@@ -27,16 +27,12 @@ There are many methods and tools for tracking versions of files.
 
 The core `git` commands:
 
-`git init`
-: Initialize a **repository** (you only need to run this once in a directory).
+<!-- REMINDER: More detailed descriptions of these commands are below. -->
 
-`git add <filename>`
-: Tell git you want to store this version of the file.
+1. `git init` -- Initialize a repository
+1. `git add <filename>` -- Add a version of the file
+1. `git commit -m "<message>"` -- Store that version in the repository
 
-`git commit -m "<message>"`
-: Store a version of the file that you added.
-: The message is a short description of what you added so that you can identify
-  this version of the file later.
 
 ```bash
 mkdir example
