@@ -498,4 +498,11 @@ Flow")][github_flow]:
 <!--1. make changes ...-->
 <!--1. `git push`-->
 
+# Git reference material
+
+- [Dangit, Git!?!][ohshitgit]
+
+<!--[ohshitgit]: https://ohshitgit.com/-->
+[ohshitgit]: https://dangitgit.com/en
+
 <!-- END -->
