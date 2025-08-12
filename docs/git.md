@@ -229,6 +229,15 @@ git log --patch
 
 # Track your code, not your data
 
+Make some example data:
+
+```bash
+touch data/raw/{a,b,c}.csv
+```
+
+Create an example 'processing' script (it just copies data from 'raw' to
+'output'):
+
 ```bash
 nano src/03-proc-data.sh
 ```
@@ -236,8 +245,8 @@ nano src/03-proc-data.sh
 ```text
 #!/usr/bin/env bash
 
-mkdir -p data/derived
-cp -n data/raw/*.csv data/derived/
+mkdir -p data/output
+cp -n data/raw/*.csv data/output/
 ```
 
 ```bash
@@ -246,15 +255,17 @@ git add src
 git commit --all -m 'Add process script'
 ```
 
+Run your 'processing' script and verify the output data:
+
 ```bash
 ./src/03-proc-data.sh
 ls data
 ls -R data
 ```
 
+
 ```bash
 git status
-# Notice that csv files do not show up
 ```
 
 # Finding things in your Git history
