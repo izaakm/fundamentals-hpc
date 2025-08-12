@@ -206,6 +206,9 @@ git status
 git diff
 ```
 
+Instead of using `git add` followed by `git commit`, you can use `git commit
+--all` to *add* and *commit* all changes:
+
 ```bash
 git commit --all -m 'Update README'
 ```
