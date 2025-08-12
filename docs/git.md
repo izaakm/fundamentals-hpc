@@ -145,7 +145,7 @@ Science][cookiecuttier_directories] for more details):
 mkdir src/example
 touch src/example/__init__.py
 git add src/example/__init__.py
-git commit -m "Initialize example package"
+git commit -m "Initialize Python package"
 ```
 
 
