@@ -472,7 +472,8 @@ git switch -
 1. Go back to original ...
 1. `git pull`
 
-## You want to create a new repository starting from GitHub
+
+## You want to create a local copy of a GitHub repository
 
 1. Go to [github.com][github] and sign in or create an account.
 1. Create a new repository
