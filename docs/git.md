@@ -451,7 +451,7 @@ git switch -
 
 ## You've already got a repo, let's put that on GitHub
 
-1. Go to github.com or github.utk.edu (???)
+1. Go to github.com and sign in or create an account.
 1. Create a new repository
 1. Follow the instructions ....
 1. Do some work ...
