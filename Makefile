@@ -1,6 +1,7 @@
 EDITOR ?= vim
-PAGES := docs/*.md
+PAGES := $(wildcard docs/*.md)
 
+# Git
 .PHONY: push
 push: .pulled
 	git push
@@ -17,6 +18,21 @@ commit: .committed
 	git add $(PAGES)
 	git commit -m "Update pages"
 	touch $@
+
+# WWW
+HTML := $(foreach page,$(PAGES),build/$(notdir $(page:.md=.html)))
+
+# $(info $(HTML))
+
+.PHONY: www
+www: $(HTML)
+build/%.html: docs/%.md | build
+	pandoc $< --standalone --to html \
+		| sed -e 's/\.md/.html/' \
+		> $@
+
+build:
+	mkdir -p build
 
 .PHONY: e
 e:
