@@ -93,8 +93,8 @@ Keep in mind that **this information will be public** if you are using, e.g.,
 GitHub.
 
 ```bash
-git config --global user.name=<your name>
-git config --global user.email=<your email>
+git config --global user.name="<your name>"
+git config --global user.email="<your email>"
 ```
 
 Verify the settings:
