@@ -461,7 +461,7 @@ git switch -
 
 ## You've already got a repo, let's put that on GitHub
 
-1. Go to github.com and sign in or create an account.
+1. Go to [github.com][github] and sign in or create an account.
 1. Create a new repository
 1. Follow the instructions ....
 1. Do some work ...
@@ -474,7 +474,7 @@ git switch -
 
 ## You want to create a new repository starting from GitHub
 
-1. Go to github.com or github.utk.edu (???)
+1. Go to [github.com][github] and sign in or create an account.
 1. Create a new repository
 1. Follow the instructions ....
 1. Then, `git clone`
@@ -522,5 +522,6 @@ Flow")][github_flow]:
 <!--[ohshitgit]: https://ohshitgit.com/-->
 [ohshitgit]: https://dangitgit.com/en
 [gitdocs]: https://git-scm.com/doc
+[github]: https://github.com/
 
 <!-- END -->
