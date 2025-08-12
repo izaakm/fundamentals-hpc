@@ -464,10 +464,8 @@ git switch -
 1. Go to [github.com][github] and sign in or create an account.
 1. Create a new repository
 1. Follow the instructions ...
-1. Make changes in that copy ...
+1. Make changes in your local directory ...
 1. `git push`
-1. Go back to original ...
-1. `git pull`
 
 
 ## You want to create a local copy of a GitHub repository
@@ -475,7 +473,7 @@ git switch -
 1. Go to [github.com][github] and sign in or create an account.
 1. Create a new repository
 1. Follow the instructions ...
-1. Then, `git clone`
+1. Then, `git clone "<remote_URL>"`
 
 
 # GitHub for collaboration
@@ -485,8 +483,8 @@ git switch -
 *The repo owner on GitHub will have to grant you access to the repo for this
 to work.*
 
-1. `git clone`
-1. work
+1. `git clone "<remote_URL>"`
+1. Work ...
 1. First, `git pull --rebase`, then `git push`
 
 
@@ -496,13 +494,13 @@ Flow")][github_flow]:
 [github_flow]: https://docs.github.com/en/get-started/using-github/github-flow
 [github_flow_old]: https://githubflow.github.io/
 
-1. fork the repo on GitHub
+1. Fork the repo on GitHub
 1. `git clone` from your fork
-1. work ...
+1. Work ...
 1. `git push`
 1. Open a pull request
 
-<!--# Remotes (optional)-->
+<!-- # Remotes (optional)-->
 <!---->
 <!--1. Go to your shared ISAAC project directory (optionally, create a dummy project dir)-->
 <!--1. `git clone --bare <original> repos/example.git` your original to the shared dir-->
