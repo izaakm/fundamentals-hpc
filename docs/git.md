@@ -25,6 +25,17 @@ There are many methods and tools for tracking versions of files.
 
 ## Overview
 
+The core `git` commands:
+
+`git init`
+: Initialize a **repository**
+
+`git add <filename>`
+: Start tracking a file
+
+`git commit -m "<message>"`
+: Store a version of the file
+
 ```bash
 mkdir example
 cd example
