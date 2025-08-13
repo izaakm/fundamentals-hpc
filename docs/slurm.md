@@ -232,8 +232,7 @@ fastqc ./data/raw/fastq/*.fastq.gz -o ./fastqc --threads "$SLURM_CPUS_PER_TASK"
 
 Alternatively, we can run fastqc in **parallel** using `--ntasks` and `srun`.
 
-Why? Fastqc can already run multi-threaded ....
-
+<!--Why? Fastqc can already run multi-threaded....-->
 <!--If you have *a lot* of fastq files, the bottleneck for **multi-threading** may become max CPUs.-->
 
 
