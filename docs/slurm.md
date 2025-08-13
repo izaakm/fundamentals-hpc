@@ -10,10 +10,12 @@ ssh <netid>@login.isaac.utk.edu
 
 Or
 
-<oit.utk.edu/hpsc> > Open OnDemand > Clusters > ISAAC NG
+<https://oit.utk.edu/hpsc/> > Open OnDemand > Clusters > ISAAC NG
 
 ```bash
-cd $SCRATCHDIR/projects/example
+cd $SCRATCHDIR
+mkdir -p example
+cd example
 ```
 
 # Get some data
@@ -23,27 +25,33 @@ We're going to write scripts to run fastqc ... we need some data.
 ```bash
 mkdir -p data/raw
 cd data/raw
-wget <some data>
+cp -r /lustre/isaac24/examples/data/fastq ./fastq
 ```
 
 # We need some compute resources
 
-Get an interactive compute session. Best for testing.
+Get an **interactive** compute session. Best for testing.
 
 ```
-salloc [...]
+salloc --account acf-utk0011 --qos short --partition short --cpus-per-task 8 --time 3:00:00
+```
+
+- Slurm will print a message showing you which compute resources have been allocated.
+- Look for the **node name**, then `ssh` to that node.
+
+```bash
+ssh "<node name>"
 ```
 
 # Write a script
 
 
-<!-- command -->
-
 ```bash
+cd $SCRATCHDIR/example
 nano qc.sh
 ```
 
-<!-- script -->
+<!-- SCRIPT -->
 
 ```bash
 #!/usr/bin/env bash
@@ -53,22 +61,45 @@ module load fastqc
 fastqc ./data/*.fastq.gz -o ./fastqc
 ```
 
+
+1. Every script should start with a **shebang**: `#!/usr/bin/env bash` or
+  `#!/bin/bash` are common conventions.
+1. Load research software using the `module` command.
+    - Check the output of `module avail` to see if your software is installed.
+1. Run your software!
+
+
 # Run a script
 
 ***Don't do this on a log in node***
+
+*Check the output of the command `hostname` to confirm that you are on a
+compute node and **not** a login node.*
 
 ```bash
 bash qc.sh
 ```
 
-# It's working! => sbatch
+# It's working!
+
+Once your script is working, you can tell Slurm to run it for you using the
+`sbatch` command.
+
+But you need to make a few changes to the script so that Slurm knows how to run
+it.
 
 
 # Simple job -- Single CPU
 
 ```bash
+nano qc-simple.sh
+```
+
+```bash
 #!/usr/bin/env bash
-#SBATCH <account,partition,qos>
+#SBATCH --account acf-utk0011
+#SBATCH --qos short
+#SBATCH --partition short
 #SBATCH --ntasks 1
 #SBATCH --cpus-per-task 1
 
@@ -83,10 +114,8 @@ Submit that script.
 sbatch qc.sh
 ```
 
-<div class="footnote">
-- A similar script is available in `/lustre/isaac/examples/jobs/fastqc`.
-- Example fastq files are available in `/lustre/isaac/examples/data/fastq`.
-</div>
+- A similar script is available in `/lustre/isaac24/examples/jobs/fastqc`.
+- Example fastq files are available in `/lustre/isaac24/examples/data/fastq`.
 
 
 # Simple job -- Single CPU
@@ -99,7 +128,10 @@ sbatch qc.sh
 <your Python or R script> <args>
 ```
 
-# Simple job -- More memory (RAM)
+# Simple job
+
+- The default memory (RAM) per CPU is ~3.8 GB
+- Want more RAM? => Request more CPUs.
 
 ```bash
 #SBATCH --cpus-per-task 1
@@ -109,11 +141,11 @@ sbatch qc.sh
 #SBATCH --cpus-per-task 8
 ```
 
-Default memory per CPU is usually ~3.8 GB, so you may want to request more CPUs
-(e.g., increase `--cpus-per-task`) or set `--mem` to request more memory.
-
-
 # Multi-threaded -- More than one CPU
+
+```bash
+nano qc-multithreaded.sh
+```
 
 ```bash
 #SBATCH <account,partition,qos>
@@ -134,12 +166,16 @@ Alternatively, we can run fastqc in **parallel** using `--ntasks` and `srun`.
 
 Why? Fastqc can already run multi-threaded ....
 
-If you have *a lot* of fastq files, the bottleneck for **multi-threading** may become max CPUs.
+<!--If you have *a lot* of fastq files, the bottleneck for **multi-threading** may become max CPUs.-->
 
 
 # Parallel
 
 Run `fastqc` up to 8 times, independently, in parallel:
+
+```bash
+nano qc-parallel.sh
+```
 
 ```
 #SBATCH <account,partition,qos>
@@ -237,6 +273,10 @@ Python
 # Job Arrays
 
 ```bash
+nano example-array.sh
+```
+
+```bash
 #!/usr/bin/env bash
 #SBATCH <account,partition,qos>
 #SBATCH --ntasks 1
@@ -287,6 +327,10 @@ number. For example:
 
 
 # Job Arrays -- Fastqc
+
+```bash
+nano qc-array.sh
+```
 
 ```bash
 #!/usr/bin/env bash
