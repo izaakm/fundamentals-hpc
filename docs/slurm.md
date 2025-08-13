@@ -97,9 +97,9 @@ nano qc-simple.sh
 
 ```bash
 #!/usr/bin/env bash
-#SBATCH --account acf-utk0011
-#SBATCH --qos short
-#SBATCH --partition short
+#SBATCH --account acf-utk0011  # Required in every script
+#SBATCH --qos short            # Required in every script
+#SBATCH --partition short      # Required in every script
 #SBATCH --ntasks 1
 #SBATCH --cpus-per-task 1
 
@@ -121,7 +121,7 @@ sbatch qc.sh
 # Simple job -- Single CPU
 
 ```bash
-#SBATCH <account,partition,qos>
+#SBATCH <account,partition,qos>  # See details above
 #SBATCH --ntasks 1
 #SBATCH --cpus-per-task 1
 
@@ -148,7 +148,7 @@ nano qc-multithreaded.sh
 ```
 
 ```bash
-#SBATCH <account,partition,qos>
+#SBATCH <account,partition,qos>  # See details above
 #SBATCH --ntasks 1
 #SBATCH --cpus-per-task 8
 
@@ -178,7 +178,7 @@ nano qc-parallel.sh
 ```
 
 ```
-#SBATCH <account,partition,qos>
+#SBATCH <account,partition,qos>  # See details above
 #SBATCH --nodes 1                # This is the default
 #SBATCH --ntasks 8
 #SBATCH --cpus-per-task 1
@@ -196,7 +196,7 @@ wait
 # Parallel -- Increase **CPUs per task**
 
 ```
-#SBATCH <account,partition,qos>
+#SBATCH <account,partition,qos>  # See details above
 #SBATCH --nodes 1                # This is the default
 #SBATCH --ntasks 8
 #SBATCH --cpus-per-task 4        # More CPUs
@@ -215,7 +215,7 @@ wait
 # Parallel -- Take advantage of multiple nodes
 
 ```
-#SBATCH <account,partition,qos>
+#SBATCH <account,partition,qos>  # See details above
 #SBATCH --nodes 6                # More nodes for the job
 #SBATCH --ntasks 8
 #SBATCH --cpus-per-task 4
@@ -278,7 +278,7 @@ nano example-array.sh
 
 ```bash
 #!/usr/bin/env bash
-#SBATCH <account,partition,qos>
+#SBATCH <account,partition,qos>  # See details above
 #SBATCH --ntasks 1
 #SBATCH --cpus-per-task 1
 #SBATCH --array 0-3
@@ -334,7 +334,7 @@ nano qc-array.sh
 
 ```bash
 #!/usr/bin/env bash
-#SBATCH <your sbatch directives>
+#SBATCH <account,partition,qos>  # See details above
 #SBATCH --ntasks 1
 #SBATCH --cpus-per-task 1
 #SBATCH --array 0-8
