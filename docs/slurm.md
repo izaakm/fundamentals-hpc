@@ -87,7 +87,8 @@ nano qc.sh
 
 module load fastqc
 
-fastqc ./data/*.fastq.gz -o ./fastqc
+mkdir -p fastqc
+fastqc ./data/raw/fastq/*.fastq.gz -o ./fastqc
 ```
 
 
@@ -134,7 +135,8 @@ nano qc-simple.sh
 
 module load fastqc
 
-fastqc ./data/*.fastq.gz -o ./fastqc
+mkdir -p fastqc
+fastqc ./data/raw/fastq/*.fastq.gz -o ./fastqc
 ```
 
 Submit that script.
@@ -185,7 +187,8 @@ module load fastqc
 
 echo "SLURM_CPUS_PER_TASK=$SLURM_CPUS_PER_TASK"
 
-fastqc ./data/*.fastq.gz -o ./fastqc --threads "$SLURM_CPUS_PER_TASK"
+mkdir -p fastqc
+fastqc ./data/raw/fastq/*.fastq.gz -o ./fastqc --threads "$SLURM_CPUS_PER_TASK"
 ```
 
 
@@ -214,7 +217,8 @@ nano qc-parallel.sh
 
 module load fastqc
 
-for fq in ./data/*.fastq.gz ; do
+mkdir -p fastqc
+for fq in ./data/raw/fastq/*.fastq.gz ; do
     echo "$(date) Running $fq ..."
     srun --ntasks 1 --cpus-per-task 1 fastqc "$fq" -o ./fastqc &
 done
@@ -232,7 +236,8 @@ wait
 
 module load fastqc
 
-for fq in ./data/*.fastq.gz ; do
+mkdir -p fastqc
+for fq in ./data/raw/fastq/*.fastq.gz ; do
     echo "$(date) Running $fq ..."
     srun --ntasks 1 --cpus-per-task 4 fastqc "$fq" -o ./fastqc &
     #                               ^
@@ -251,7 +256,8 @@ wait
 
 module load fastqc
 
-for fq in ./data/*.fastq.gz ; do
+mkdir -p fastqc
+for fq in ./data/raw/fastq/*.fastq.gz ; do
     echo "$(date) Running $fq ..."
     srun --ntasks 1 --cpus-per-task 4 fastqc "$fq" -o ./fastqc &
     #        This ^ is still 1 task
@@ -372,10 +378,11 @@ module load fastqc
 
 i=$SLURM_ARRAY_TASK_ID
 
-fastq_files=( data/*.fastq.gz )
+fastq_files=( data/raw/fastq/*.fastq.gz )
 
 echo "Found ${#fastq_files[@]} fastq files."
 
+mkdir -p fastqc
 fastqc "${fastq_files[$i]}" -o ./fastqc
 ```
 
