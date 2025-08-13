@@ -202,6 +202,12 @@ sbatch qc.sh
 squeue --me
 ```
 
+## Output
+
+- We told `fastqc` to put it's output files in the `fastqc` directory.
+- Slurm also saves all of the text that would be normally printed to the
+  terminal in a `slurm.out` file.
+
 
 # Simple job -- Single CPU
 
