@@ -150,10 +150,14 @@ Once your script is working, you can tell Slurm to run it for you using the
 But you need to make a few changes to the script so that Slurm knows how to run
 it.
 
-Include **sbatch directives** in your script to request compute resources, for
-example:
+- Include **sbatch directives** to request compute resources.
+- **sbatch directives** must be at the *top* of your script immediately
+  following the shebang.
+
+For example:
 
 ```
+#!/usr/bin/env bash
 #SBATCH --account acf-utk0011
 #SBATCH --partition short
 #SBATCH --qos short
