@@ -2,6 +2,8 @@
 title: Slurm
 ---
 
+# Writing scripts for Slurm
+
 # Log in
 
 ```bash
