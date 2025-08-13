@@ -66,7 +66,7 @@ Connection to il1339 closed.
 exit
 salloc: Relinquishing job allocation 3918678
 salloc: Job allocation 3918678 has been revoked.
-[jmill165@login2 fastq]$
+[jmill165@login2 ~]$
 ```
 
 </div>
