@@ -4,15 +4,17 @@ title: Slurm
 
 # Writing scripts for Slurm
 
-# Log in
+## Log in to the cluster
+
+You can use `ssh` from your terminal:
 
 ```bash
 ssh <netid>@login.isaac.utk.edu
 ```
 
-Or
+Or you can get a shell from Open OnDemand
 
-<https://oit.utk.edu/hpsc/> > Open OnDemand > Clusters > ISAAC NG
+<https://oit.utk.edu/hpsc/> > Open OnDemand > Clusters > "ISAAC Shell Access"
 
 ```bash
 cd $SCRATCHDIR
