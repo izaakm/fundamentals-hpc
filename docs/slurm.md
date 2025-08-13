@@ -53,6 +53,13 @@ salloc: Nodes il1339 are ready for job
 ssh "il1339"
 ```
 
+Your prompt should change to show the name of the node your are currently
+logged into:
+
+```
+[jmill165@il1339 ~]$ 
+```
+
 <div style="border: 1px solid black; margin: 20px; padding: 20px;">
 
 ***Don't forget to `exit` your allocation when you're done.***
