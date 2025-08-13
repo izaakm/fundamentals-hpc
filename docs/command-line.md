@@ -266,7 +266,6 @@ List the contents of your home directory with extra information:
 
 1.  Login to the cluster and print the working directory.
 2.  List the contents of the current directory.
-    - ~~Also show hidden files.~~ <!-- REMOVE -->
     - Who is the owner of the files?
 3.  Change your working directory to your scratch directory:
     - Use the full path.
@@ -301,7 +300,8 @@ List the contents of your home directory with extra information:
 # Absolute and relative paths
 
 
-Absolute path
+An **absolute path** begins with a forward slash `/`; the path is *not*
+relative to the current working directory.
 
 ```bash
 cd
@@ -319,7 +319,8 @@ cd /lustre/isaac24/scratch/<netid>
 cd $SCRATCHDIR
 ```
 
-Relative path
+A relative path does *not* begin with a forward slash `/`; the path is
+*relative to* the current working directory.
 
 ```bash
 cd
