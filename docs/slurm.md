@@ -105,10 +105,24 @@ fastqc ./data/raw/fastq/*.fastq.gz -o ./fastqc
 
 # Run a script
 
+
+<div style="border: 1px solid black; padding: 20px;">
+
 ***Don't do this on a log in node***
 
 *Check the output of the command `hostname` to confirm that you are on a
 compute node and **not** a login node.*
+
+```bash
+hostname
+```
+
+```
+il1339
+```
+
+</div>
+
 
 ```bash
 bash qc.sh
