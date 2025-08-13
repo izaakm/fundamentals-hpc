@@ -143,18 +143,29 @@ Once your script is working, you can tell Slurm to run it for you using the
 But you need to make a few changes to the script so that Slurm knows how to run
 it.
 
+Include **sbatch directives** in your script to request compute resources, for
+example:
 
-# Simple job -- Single CPU
+```
+#SBATCH --account acf-utk0011
+#SBATCH --partition short
+#SBATCH --qos short
+```
+
+You must *always* provide an `--account`, `--partition`, and `--qos` for Slurm.
+
+
+# Simple Slurm job -- Single CPU
 
 ```bash
-nano qc-simple.sh
+nano qc.sh
 ```
 
 ```bash
 #!/usr/bin/env bash
-#SBATCH --account acf-utk0011  # Required in every script
-#SBATCH --qos short            # Required in every script
-#SBATCH --partition short      # Required in every script
+#SBATCH --account acf-utk0011  # Required in every Slurm script
+#SBATCH --partition short      # Required in every Slurm script
+#SBATCH --qos short            # Required in every Slurm script
 #SBATCH --ntasks 1
 #SBATCH --cpus-per-task 1
 
