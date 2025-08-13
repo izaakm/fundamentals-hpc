@@ -192,6 +192,13 @@ sbatch qc.sh
 - Example fastq files are available in `/lustre/isaac24/examples/data/fastq`.
 
 
+## Check the job queue to see if your job is running:
+
+```bash
+squeue --me
+```
+
+
 # Simple job -- Single CPU
 
 ```bash
