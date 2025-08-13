@@ -14,7 +14,7 @@ ssh <netid>@login.isaac.utk.edu
 
 Or you can get a shell from Open OnDemand
 
-<https://oit.utk.edu/hpsc/> > Open OnDemand > Clusters > "ISAAC Shell Access"
+<https://oit.utk.edu/hpsc/> > "Open OnDemand" > "Clusters" > "ISAAC Shell Access"
 
 ```bash
 cd $SCRATCHDIR
