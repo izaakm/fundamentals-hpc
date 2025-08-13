@@ -37,11 +37,40 @@ salloc --account acf-utk0011 --qos short --partition short --cpus-per-task 8 --t
 ```
 
 - Slurm will print a message showing you which compute resources have been allocated.
-- Look for the **node name**, then `ssh` to that node.
+- Look for the **Node** name, then `ssh` to that node.
+
+```
+salloc: Granted job allocation 3918678
+salloc: Waiting for resource configuration
+salloc: Nodes il1339 are ready for job
+```
 
 ```bash
-ssh "<node name>"
+ssh "il1339"
 ```
+
+<div style="border: 1px solid black">
+
+Don't forget to `exit` your allocation when you're done.
+
+1. `exit` your `ssh` session
+1. `exit` your Slurm allocation
+
+For example:
+
+```
+[jmill165@il1339 ~]$ exit
+logout
+Connection to il1339 closed.
+[jmill165@login2 fastq]$ exit
+exit
+salloc: Relinquishing job allocation 3918678
+salloc: Job allocation 3918678 has been revoked.
+[jmill165@login2 fastq]$
+```
+
+</div>
+
 
 # Write a script
 
