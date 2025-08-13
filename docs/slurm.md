@@ -51,7 +51,7 @@ ssh "il1339"
 
 <div style="border: 1px solid black; padding: 20px;">
 
-Don't forget to `exit` your allocation when you're done.
+***Don't forget to `exit` your allocation when you're done.***
 
 1. `exit` your `ssh` session
 1. `exit` your Slurm allocation
