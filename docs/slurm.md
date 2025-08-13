@@ -108,7 +108,7 @@ fastqc ./data/raw/fastq/*.fastq.gz -o ./fastqc
 
 <div style="border: 1px solid black; padding: 20px;">
 
-***Don't do this on a log in node***
+***REMINDER: Don't run scripts on the login nodes.***
 
 *Check the output of the command `hostname` to confirm that you are on a
 compute node and **not** a login node.*
@@ -117,8 +117,16 @@ compute node and **not** a login node.*
 hostname
 ```
 
+Good:
+
 ```
 il1339
+```
+
+Bad:
+
+```
+login1
 ```
 
 </div>
