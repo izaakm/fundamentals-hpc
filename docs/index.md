@@ -11,7 +11,8 @@
 [2]: command-line.md
 [3]: git.md
 [4]: slurm.md
-[5]: containers.md
+<!--[5]: containers.md-->
+[5]: https://trev-f.github.io/hpc-containers-crash-course/
 [6]: nextflow.md
 
 <!-- END -->
