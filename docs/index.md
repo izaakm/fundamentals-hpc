@@ -4,7 +4,7 @@
 - [Intro to Command Line (Linux)][2]
 - [Managing Projects with Git][3]
 - [Writing Scripts for Slurm][4]
-- [Get Started Using Containers][5]
+- [HPC Containers Crash Course][5]
 - [Get Started Using NextFlow][6]
 
 [1]: isaac-ng.md
