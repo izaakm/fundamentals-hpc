@@ -112,8 +112,8 @@ fastqc ./data/raw/fastq/*.fastq.gz -o ./fastqc
     - It starts with `#!`
     - The rest of the line tells the shell which program to use to run your
       script, in this case, that program is `bash`
-1. Other lines that begin with a hash `#` are **comment**: they tell bash to
-    *ignore* them.
+1. Other lines that begin with a hash `#` are **comments**: comments are just
+   for us humans; bash will ignore them.
 1. All other lines (not comments) contain commands.
 1. Commands are separated by into 'words' by spaces. You can use quotes `"` to
     tell bash that everything in the quotes is a single 'word'.
