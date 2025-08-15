@@ -207,15 +207,15 @@ squeue --me
 ```
 
 <!--BOX ============================================================-->
-
 <div style="border: 1px solid black; margin: 20px; padding: 20px;">
+
+You can stop or *cancel* a job in your queue with the `scancel` command:
 
 ```bash
 scancel <jobid>
 ```
 
 </div>
-
 <!--END BOX ========================================================-->
 
 
