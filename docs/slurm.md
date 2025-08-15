@@ -98,6 +98,7 @@ nano qc.sh
 ```bash
 #!/usr/bin/env bash
 
+# Load the fastqc module
 module load fastqc
 
 mkdir -p fastqc
@@ -106,7 +107,16 @@ fastqc ./data/raw/fastq/*.fastq.gz -o ./fastqc
 
 
 1. Every script should start with a **shebang**: `#!/usr/bin/env bash` or
-  `#!/bin/bash` are common conventions.
+   `#!/bin/bash` are common conventions. The **shebang** is special:
+    - It must be the first line of the file.
+    - It starts with `#!`
+    - The rest of the line tells the shell which program to use to run your
+      script, in this case, that program is `bash`
+1. Other lines that begin with a hash `#` are **comment**: they tell bash to
+    *ignore* them.
+1. All other lines (not comments) contain commands.
+1. Commands are separated by into 'words' by spaces. You can use quotes `"` to
+    tell bash that everything in the quotes is a single 'word'.
 1. Load research software using the `module` command.
     - Check the output of `module avail` to see if your software is installed.
 1. Run your software!
