@@ -202,6 +202,19 @@ sbatch qc.sh
 squeue --me
 ```
 
+<!--BOX ============================================================-->
+
+<div style="border: 1px solid black; margin: 20px; padding: 20px;">
+
+```bash
+scancel <jobid>
+```
+
+</div>
+
+<!--END BOX ========================================================-->
+
+
 ## Output
 
 - We told `fastqc` to put it's output files in the `fastqc` directory.
