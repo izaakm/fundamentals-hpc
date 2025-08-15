@@ -115,7 +115,7 @@ fastqc ./data/raw/fastq/*.fastq.gz -o ./fastqc
 1. Other lines that begin with a hash `#` are **comments**: comments are just
    for us humans; bash will ignore them.
 1. All other lines (not comments) contain commands.
-1. Commands are separated by into 'words' by spaces. You can use quotes `"` to
+1. Commands are separated into 'words' by spaces. You can use quotes `"` to
     tell bash that everything in the quotes is a single 'word'.
 1. Load research software using the `module` command.
     - Check the output of `module avail` to see if your software is installed.
