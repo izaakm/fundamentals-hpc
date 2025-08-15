@@ -13,6 +13,7 @@
 [4]: slurm.md
 <!--[5]: containers.md-->
 [5]: https://trev-f.github.io/hpc-containers-crash-course/
-[6]: nextflow.md
+<!--[6]: nextflow.md-->
+[6]: https://github.com/ryandkuster/NF_workshop_2025/wiki
 
 <!-- END -->
