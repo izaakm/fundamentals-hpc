@@ -60,6 +60,7 @@ logged into:
 [jmill165@il1339 ~]$ 
 ```
 
+<!--BOX ============================================================-->
 <div style="border: 1px solid black; margin: 20px; padding: 20px;">
 
 ***Don't forget to `exit` your allocation when you're done.***
@@ -81,6 +82,7 @@ salloc: Job allocation 3918678 has been revoked.
 ```
 
 </div>
+<!--END BOX ========================================================-->
 
 
 # Write a script
@@ -116,6 +118,7 @@ fastqc ./data/raw/fastq/*.fastq.gz -o ./fastqc
 bash qc.sh
 ```
 
+<!--BOX ============================================================-->
 <div style="border: 1px solid black; margin: 20px; padding: 20px;">
 
 ***REMINDER: Don't run scripts on the login nodes.***
@@ -140,6 +143,7 @@ login2.cn.isaac.utk.edu
 ```
 
 </div>
+<!--END BOX ========================================================-->
 
 
 # It's working!
